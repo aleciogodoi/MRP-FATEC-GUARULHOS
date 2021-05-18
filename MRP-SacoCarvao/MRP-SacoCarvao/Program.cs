@@ -14,26 +14,20 @@ namespace MRP_SacoCarvao
         [STAThread]
         static void Main()
         {
-            /*
+            
             ProdutoDAO produtoDAO = new ProdutoDAO();
 
-            Produto produto = produtoDAO.getLastProduto();
-            produtoDAO.InsertProduto(new Produto(produto.idProduto+1, "Produto "+ (produto.idProduto + 1)));
             List<Produto> produtos = new List<Produto>();
-            produtos = produtoDAO.ListaTodosProdutos();
+            produtos = produtoDAO.GetProdutos();
 
             foreach (Produto p in produtos){
-                Console.WriteLine("{0} - {1}", p.idProduto, p.nomeProduto);
+                Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7} ", 
+                    p.idProduto, p.nomeProduto, p.descrProduto, 
+                    p.qtdeMinEstoque, p.qtdeMaxEstoque, p.qtdeAtualEstoque,
+                    p.grupo.idGrupo, p.grupo.nomeGrupo);
             }
 
-            produto = produtoDAO.getProduto(10);
-            Console.WriteLine("{0} - {1}", produto.idProduto, produto.nomeProduto);
-            
-
-            (new ProdutoDAO()).Delete(51);
-            (new ProdutoDAO()).Update(new Produto(50, "Produto XX"));
-            */
-
+          
             GrupoDAO grupoDAO = new GrupoDAO();
             // grupoDAO.Insert(new Grupo(200, "Grupo 200"));
             // grupoDAO.Update(new Grupo(200, "Grupo 200 V2"));

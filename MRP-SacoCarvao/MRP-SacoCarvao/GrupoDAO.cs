@@ -95,7 +95,7 @@ namespace MRP_SacoCarvao
 
         public List<Grupo> GetGrupos()
         {
-            List<Grupo> listaProdutos = new List<Grupo>();
+            List<Grupo> listaGrupos = new List<Grupo>();
             Grupo grupo;
             Conexao conexao = new Conexao();
 
@@ -121,14 +121,14 @@ namespace MRP_SacoCarvao
                     grupo = new Grupo();
                     grupo.idGrupo = Convert.ToInt32(reader["idGrupo"]);
                     grupo.nomeGrupo = (string)reader["nomeGrupo"];
-                    listaProdutos.Add(grupo);
+                    listaGrupos.Add(grupo);
                 }
             }
             catch (MySqlException e)
             {
             }
             conexao.CloseConexao();
-            return listaProdutos;
+            return listaGrupos;
         }
 
         public Grupo Get(int id)
