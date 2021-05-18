@@ -47,9 +47,10 @@ namespace MRP_SacoCarvao
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnExcluir_Click(object sender, EventArgs e)
         {
-
+            GrupoDAO grupoDAO = new GrupoDAO();
+            grupoDAO.Delete(int.Parse(textBox1.Text));
         }
     }
 }

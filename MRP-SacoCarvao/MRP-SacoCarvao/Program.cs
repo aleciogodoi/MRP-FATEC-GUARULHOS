@@ -33,6 +33,17 @@ namespace MRP_SacoCarvao
             (new ProdutoDAO()).Delete(51);
             (new ProdutoDAO()).Update(new Produto(50, "Produto XX"));
             */
+
+            GrupoDAO grupoDAO = new GrupoDAO();
+            // grupoDAO.Insert(new Grupo(200, "Grupo 200"));
+            // grupoDAO.Update(new Grupo(200, "Grupo 200 V2"));
+            grupoDAO.Delete(200);
+
+            List<Grupo> grupos = new List<Grupo>();
+            grupos = grupoDAO.GetGrupos();
+            foreach (Grupo g in grupos)
+                Console.WriteLine("{0} - {1}", g.idGrupo, g.nomeGrupo);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             frmMenu frmMenu = new frmMenu();
