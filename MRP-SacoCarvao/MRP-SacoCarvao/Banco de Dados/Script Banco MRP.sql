@@ -162,5 +162,5 @@ Order by p.IdProduto;
 USE mrp;
 DROP USER IF EXISTS 'mrp'@'localhost';
 CREATE USER 'mrp'@'localhost' IDENTIFIED BY 'mrp';
-GRANT ALL ON mpr.* TO 'mrp'@'localhost';
+GRANT ALL ON *.* TO 'mrp'@'localhost';
 FLUSH PRIVILEGES;
