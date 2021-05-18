@@ -57,10 +57,10 @@ namespace MRP_SacoCarvao
                     produto.qtdeMinEstoque = Convert.ToInt32(reader["qtdeMinEstoque"]);
                     produto.qtdeMaxEstoque = Convert.ToInt32(reader["qtdeMaxEstoque"]);
                     produto.qtdeAtualEstoque = Convert.ToInt32(reader["qtdeAtualEstoque"]);
-                    //produto.altura = (float)(reader["altura"]);
-                    //produto.comprimento = (float)(reader["comprimento"]);
-                    //produto.peso = (float)(reader["peso"]);
-                    //produto.especificacao = (string)(reader["especificacao"]);
+                    produto.altura = (reader["altura"] != DBNull.Value ? Convert.ToSingle(reader["altura"]) : 0);
+                    produto.comprimento = (reader["comprimento"] != DBNull.Value ? Convert.ToSingle(reader["comprimento"]) : 0);
+                    produto.peso = (reader["peso"] != DBNull.Value ? Convert.ToSingle(reader["peso"]) : 0);
+                    produto.especificacao = (reader["especificacao"] != DBNull.Value ? (string)(reader["especificacao"]) : "");
                     produto.grupo = new Grupo (Convert.ToInt32(reader["idGrupo"]), (string)reader["nomeGrupo"]);
 
                     listaProdutos.Add(produto);
