@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// Classe Grupos
 namespace MRP_SacoCarvao
 {
     class Grupo
