@@ -9,10 +9,10 @@
       <Value Profile="(Default)">mrp</Value>
     </Setting>
     <Setting Name="Usuario" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">ale</Value>
+      <Value Profile="(Default)">mrp</Value>
     </Setting>
     <Setting Name="Senha" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">ale</Value>
+      <Value Profile="(Default)">mrp</Value>
     </Setting>
   </Settings>
 </SettingsFile>

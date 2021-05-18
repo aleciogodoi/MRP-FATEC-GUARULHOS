@@ -43,7 +43,7 @@ namespace MRP_SacoCarvao.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ale")]
+        [global::System.Configuration.DefaultSettingValueAttribute("mrp")]
         public string Usuario {
             get {
                 return ((string)(this["Usuario"]));
@@ -52,7 +52,7 @@ namespace MRP_SacoCarvao.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ale")]
+        [global::System.Configuration.DefaultSettingValueAttribute("mrp")]
         public string Senha {
             get {
                 return ((string)(this["Senha"]));
