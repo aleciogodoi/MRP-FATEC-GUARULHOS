@@ -4,13 +4,12 @@ MRP (Manufacturing Resource Planning) da honrada montadora Saco de Carvão Compu
 
 O programa criado no windows forms, em C#, é responsável por cadastrar e controlar o estoque de componentes e produtos finalizados em um banco de dados MySql.
 
-## Estoque de Componentes
-- Ariel
-- Alvaro
-- **Gabriel Szucs**
-- João
-- Thaynara
-- Vinicius Calgaro
-- Vinicius Lima
+## Cadastro de Produtos
+- **Alexandre**
+- Diogo
+- Gabriel Faltz
+- Julia
+- Marcos
+- Rafael
 
 ![Saco de carvão](/img/logo.png)
