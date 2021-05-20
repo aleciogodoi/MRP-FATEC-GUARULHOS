@@ -5,13 +5,13 @@ MRP (Manufacturing Resource Planning) da honrada montadora Saco de Carvão Compu
 O programa criado no windows forms, em C#, é responsável por cadastrar e controlar o estoque de componentes e produtos finalizados em um banco de dados MySql.
 
 ## Como baixar o projeto
-Se você faz parte do 3° semestre de ADS tem duas coisas que mudaram entre o segundo e terceiro semestre:
+Se você faz parte do 3° semestre de ADS tem duas coisas que mudaram entre o segundo e terceiro semestres:
 
 1. Depois das mudanças estruturais feitas pelo professor [Alécio](https://github.com/aleciogodoi), o MRP finalmente faz sentido e está a um passo de se tornar funcional.
 
-2. Ficou ainda mais difícl contribuir com o projeto...
+2. Ficou ainda mais difícil contribuir com o projeto...
 
-Não que esteja difícil de entender o código, só tá difícil dar o primeiro passo e configurar todas as tecnologias que estão sendo usandas, então vamo devagar...
+Não que esteja difícil de entender o código, só tá difícil dar o primeiro passo e configurar todas as tecnologias que estão sendo usadas, então vamo devagar...
 
 ### Git
 1. Baixe e instale o [Git](https://git-scm.com/downloads) no seu computador.
@@ -46,7 +46,7 @@ https://github.com/MRP-FATEC-GUARULHOS-ADS/MRP-FATEC-GUARULHOS.git
 
 ![erro carregando referências](/img/vs-git6.png)
 
-5. Caso isso acontece tente remover a referência e readiciona-la em `Projeto > Adicionar Referência...`, se o problema for no Conector MySql tente instalar a [versão 8.0.21](https://downloads.mysql.com/archives/c-net/), ou então *dá teu jeito cara, sei lá*.
+5. Caso isso aconteça, tente remover a referência e readiciona-la em `Projeto > Adicionar Referência...`, se o problema for no Conector MySql tente instalar a [versão 8.0.21](https://downloads.mysql.com/archives/c-net/), ou então *dá teu jeito cara, sei lá*.
 
 ![adicionando referências](/img/vs-gitrefs.png)
 
@@ -58,7 +58,7 @@ Agora toda vez que editar alguma coisa você deve se certificar que ele esteja a
 ![Team-explorer](/img/vs-git3.jpg)
 
 ## Branch certa do projeto???
-Se tudo deu certo esse repositório tem 5 *branches*, uma principal e uma pra cada módulo, *branchs* são versões paralelas do mesmo repositório, que a gente tá usando pra evitar conflito entre contribuições, se quiser mudar pra *branch* do seu módulo é só escolher no canto inferior direito do Visual Studio, ou só esquece o que eu disse e deixa no `main` mesmo, o importante é contribuir.
+Se tudo deu certo esse repositório tem 5 *branches*, uma principal e uma pra cada módulo. *Branchs* são versões paralelas do mesmo repositório, que a gente tá usando pra evitar conflito entre contribuições, se quiser mudar pra *branch* do seu módulo é só escolher no canto inferior direito do Visual Studio, ou só esquece o que eu disse e deixa no `main` mesmo, o importante é contribuir.
 
 ## Contribuindo com o projeto
 1. Faça as alterações que quiser no projeto e depois abra a aba 'Team Explorer' em `Exibir > Team Explorer`, ou clique no lápis no canto inferior direito do programa, a tela de alterações será aberta, como na imagem abaixo.
