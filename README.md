@@ -46,7 +46,7 @@ https://github.com/MRP-FATEC-GUARULHOS-ADS/MRP-FATEC-GUARULHOS.git
 
 ![erro carregando referências](/img/vs-git6.png)
 
-5. Caso isso acontece tente remover a referência e readiciona-la em `Projeto > Adicionar Referência...`, se o problema for no Conector MySql tente reinstalar o mesmo, ou então *dá teu jeito cara, sei lá*.
+5. Caso isso acontece tente remover a referência e readiciona-la em `Projeto > Adicionar Referência...`, se o problema for no Conector MySql tente instalar a [versão 8.0.21](https://downloads.mysql.com/archives/c-net/), ou então *dá teu jeito cara, sei lá*.
 
 ![adicionando referências](/img/vs-gitrefs.png)
 
