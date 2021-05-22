@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComponenteDAO.cs" />
+    <Compile Include="Componente.cs" />
+    <Compile Include="frmCadastroComponentes .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroComponentes .Designer.cs">
+      <DependentUpon>frmCadastroComponentes .cs</DependentUpon>
+    </Compile>
     <Compile Include="ProdutoDAO.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Conexao.cs" />
@@ -66,6 +74,9 @@
     <Compile Include="GrupoDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCadastroComponentes .resx">
+      <DependentUpon>frmCadastroComponentes .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>

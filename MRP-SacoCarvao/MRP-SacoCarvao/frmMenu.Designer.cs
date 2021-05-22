@@ -83,13 +83,14 @@
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.componentesToolStripMenuItem.Text = "Componentes";
+            this.componentesToolStripMenuItem.Click += new System.EventHandler(this.ComponentesToolStripMenuItem_Click);
             // 
             // gruposToolStripMenuItem
             // 
             this.gruposToolStripMenuItem.Name = "gruposToolStripMenuItem";
             this.gruposToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.gruposToolStripMenuItem.Text = "Grupos";
-            this.gruposToolStripMenuItem.Click += new System.EventHandler(this.gruposToolStripMenuItem_Click);
+            this.gruposToolStripMenuItem.Click += new System.EventHandler(this.GruposToolStripMenuItem_Click);
             // 
             // estruturaDeProdutosFinaisToolStripMenuItem
             // 
@@ -168,6 +169,7 @@
             this.Controls.Add(this.menuMRP);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuMRP;
+            this.MinimumSize = new System.Drawing.Size(464, 336);
             this.Name = "frmMenu";
             this.Text = "MRP - Saco de Carvão";
             this.menuMRP.ResumeLayout(false);

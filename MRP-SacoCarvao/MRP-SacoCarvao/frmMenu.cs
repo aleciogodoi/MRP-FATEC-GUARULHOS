@@ -16,9 +16,16 @@ namespace MRP_SacoCarvao
         {
             InitializeComponent();
         }
-        
 
-        private void gruposToolStripMenuItem_Click(object sender, EventArgs e)
+        // funcoes dos objetos
+        private void ComponentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroComponentes objFrmCadastroComps = new frmCadastroComponentes();
+            objFrmCadastroComps.MdiParent = this;
+            objFrmCadastroComps.Show();
+        }
+
+        private void GruposToolStripMenuItem_Click(object sender, EventArgs e)
         {
             produtosFinaisToolStripMenuItem.Checked = true;
             frmCadastroGrupos frmCadastroGrupos = new frmCadastroGrupos();
