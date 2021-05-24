@@ -32,9 +32,9 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
         private void frmCadastroComponentes_SizeChanged(object sender, EventArgs e)
         {
             if (ListaComps_dgv.Width > 760)
-            {
-                ListaComps_dgv.Columns[6].Width = ListaComps_dgv.Width - 560;
-            }
+                ListaComps_dgv.Columns[6].Width = ListaComps_dgv.Width - 660;
+            else
+                ListaComps_dgv.Columns[6].Width = 100;
         }
 
         // funcoes dos objetos
