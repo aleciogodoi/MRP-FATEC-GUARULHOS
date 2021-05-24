@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace MRP_SacoCarvao
+namespace MRP_SacoCarvao.Cadastro_de_Componentes
 {
     public partial class frmCadastroComponentes : Form
     {
@@ -12,8 +12,8 @@ namespace MRP_SacoCarvao
             InitializeComponent();
         }
 
-        // funcoes do formulario
-        private void FormCadastroComponentes_Load(object sender, EventArgs e)
+        // funcoes personalizadas
+        private void AtualizaLista ()
         {
             ComponenteDAO objCompDAO = new ComponenteDAO();
             List<Componente> listaComponentes = new List<Componente>();
@@ -22,7 +22,21 @@ namespace MRP_SacoCarvao
             var lista = new BindingList<Componente>(listaComponentes);
             ListaComps_dgv.DataSource = lista;
         }
-        
+
+        // funcoes do formulario
+        private void FormCadastroComponentes_Load(object sender, EventArgs e)
+        {
+            AtualizaLista();
+        }
+
+        private void frmCadastroComponentes_SizeChanged(object sender, EventArgs e)
+        {
+            if (ListaComps_dgv.Width > 760)
+            {
+                ListaComps_dgv.Columns[6].Width = ListaComps_dgv.Width - 560;
+            }
+        }
+
         // funcoes dos objetos
         private void DataGridView_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -53,20 +67,31 @@ namespace MRP_SacoCarvao
         /// botoes
         private void BtnCadastrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ಠ▃ಠ");
+            frmCadastroComponentesInsert objFrmCadastroInsert = new frmCadastroComponentesInsert();
+            objFrmCadastroInsert.ShowDialog();
+            AtualizaLista();
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show( ListaComps_dgv.CurrentCell.Value.ToString() );
+            Componente objCompSelec = ListaComps_dgv.CurrentRow.DataBoundItem as Componente;
+            frmCadastroComponentesUpdate objFrmCadastroUpdate = new frmCadastroComponentesUpdate( objCompSelec );
+            objFrmCadastroUpdate.ShowDialog();
+            AtualizaLista();
         }
 
         private void BtnExcluir_Click(object sender, EventArgs e)
         {
-            MessageBox.Show( ListaComps_dgv.CurrentCell.Value.ToString() );
-
-            //ComponenteDAO objCompDAO = new ComponenteDAO();
-            //objCompDAO.Delete(int.Parse(textBox1.Text));
+            Componente objCompSelec = ListaComps_dgv.CurrentRow.DataBoundItem as Componente;
+            DialogResult confirmarDelete = MessageBox.Show(
+                "ಠ▃ಠ " + objCompSelec.modeloComponente + " ?!", "Confirmar Exclusão",
+                MessageBoxButtons.YesNo
+            );
+            if (confirmarDelete == DialogResult.Yes) {
+                ComponenteDAO objCompDAO = new ComponenteDAO();
+                objCompDAO.Delete(objCompSelec.idComponente);
+            }
+            AtualizaLista();
         }
     }
 }

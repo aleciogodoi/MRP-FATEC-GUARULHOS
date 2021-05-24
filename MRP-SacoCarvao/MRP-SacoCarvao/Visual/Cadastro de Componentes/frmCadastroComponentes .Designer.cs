@@ -1,4 +1,4 @@
-﻿namespace MRP_SacoCarvao
+﻿namespace MRP_SacoCarvao.Cadastro_de_Componentes
 {
     partial class frmCadastroComponentes
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroComponentes));
             this.ListaComps_dgv = new System.Windows.Forms.DataGridView();
             this.Pesquisar_tbx = new System.Windows.Forms.TextBox();
             this.Pesquisar_lbl = new System.Windows.Forms.Label();
@@ -59,7 +60,9 @@
             this.ListaComps_dgv.Location = new System.Drawing.Point(0, 114);
             this.ListaComps_dgv.Name = "ListaComps_dgv";
             this.ListaComps_dgv.ReadOnly = true;
+            this.ListaComps_dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ListaComps_dgv.Size = new System.Drawing.Size(544, 244);
+            this.ListaComps_dgv.StandardTab = true;
             this.ListaComps_dgv.TabIndex = 2;
             this.ListaComps_dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowEnter);
             this.ListaComps_dgv.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowLeave);
@@ -206,10 +209,12 @@
             this.Controls.Add(this.Corpo_pnl);
             this.Controls.Add(this.EspDir_pnl);
             this.Controls.Add(this.EspEsq_pnl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(448, 320);
             this.Name = "frmCadastroComponentes";
             this.Text = "Cadastro de Componentes";
             this.Load += new System.EventHandler(this.FormCadastroComponentes_Load);
+            this.SizeChanged += new System.EventHandler(this.frmCadastroComponentes_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.ListaComps_dgv)).EndInit();
             this.Corpo_pnl.ResumeLayout(false);
             this.Corpo_pnl.PerformLayout();

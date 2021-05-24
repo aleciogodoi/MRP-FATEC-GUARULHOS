@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -47,40 +50,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComponenteDAO.cs" />
-    <Compile Include="Componente.cs" />
-    <Compile Include="frmCadastroComponentes .cs">
+    <Compile Include="Conexao\ComponenteDAO.cs" />
+    <Compile Include="Modelo\Componente.cs" />
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentes .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroComponentes .Designer.cs">
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentes .Designer.cs">
       <DependentUpon>frmCadastroComponentes .cs</DependentUpon>
     </Compile>
-    <Compile Include="ProdutoDAO.cs" />
-    <Compile Include="Produto.cs" />
-    <Compile Include="Conexao.cs" />
-    <Compile Include="frmMenu.cs">
+    <Compile Include="Conexao\ProdutoDAO.cs" />
+    <Compile Include="Modelo\Produto.cs" />
+    <Compile Include="Conexao\Conexao.cs" />
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentesUpdate .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenu.Designer.cs">
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentesUpdate .Designer.cs">
+      <DependentUpon>frmCadastroComponentesUpdate .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentesInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentesInsert.Designer.cs">
+      <DependentUpon>frmCadastroComponentesInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCadastroGrupos.cs">
+    <Compile Include="Visual\frmCadastroGrupos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastroGrupos.Designer.cs">
+    <Compile Include="Visual\frmCadastroGrupos.Designer.cs">
       <DependentUpon>frmCadastroGrupos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Grupo.cs" />
-    <Compile Include="GrupoDAO.cs" />
+    <Compile Include="Modelo\Grupo.cs" />
+    <Compile Include="Conexao\GrupoDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCadastroComponentes .resx">
+    <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentes .resx">
       <DependentUpon>frmCadastroComponentes .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenu.resx">
+    <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentesUpdate .resx">
+      <DependentUpon>frmCadastroComponentesUpdate .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentesInsert.resx">
+      <DependentUpon>frmCadastroComponentesInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCadastroGrupos.resx">
+    <EmbeddedResource Include="Visual\frmCadastroGrupos.resx">
       <DependentUpon>frmCadastroGrupos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -108,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Banco de Dados\Script Banco MRP.sql" />
+    <Content Include="favicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
