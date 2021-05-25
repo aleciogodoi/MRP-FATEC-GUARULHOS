@@ -77,6 +77,14 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
             }
         }
 
+        private void ListaComps_dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Componente objCompSelec = ListaComps_dgv.CurrentRow.DataBoundItem as Componente;
+            frmCadastroComponentesUpdate objFrmCadastroUpdate = new frmCadastroComponentesUpdate(objCompSelec);
+            objFrmCadastroUpdate.ShowDialog();
+            AtualizaLista();
+        }
+
         /// pesquisa
         private void Pesquisar_tbx_KeyDown(object sender, KeyEventArgs e)
         {

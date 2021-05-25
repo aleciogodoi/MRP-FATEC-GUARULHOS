@@ -60,6 +60,10 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
             {
                 OK_btn.Enabled = true;
             }
+            else
+            {
+                OK_btn.Enabled = false;
+            }
         }
 
         private void OK_btn_Click(object sender, System.EventArgs e)
