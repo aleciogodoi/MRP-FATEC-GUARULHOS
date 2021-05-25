@@ -184,6 +184,7 @@
             this.Pesquisar_tbx.Name = "Pesquisar_tbx";
             this.Pesquisar_tbx.Size = new System.Drawing.Size(350, 20);
             this.Pesquisar_tbx.TabIndex = 0;
+            this.Pesquisar_tbx.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pesquisar_tbx_KeyDown);
             // 
             // Pesquisar_btn
             // 
