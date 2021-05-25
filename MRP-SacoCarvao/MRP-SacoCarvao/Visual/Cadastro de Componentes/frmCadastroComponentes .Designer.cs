@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroComponentes));
             this.ListaComps_dgv = new System.Windows.Forms.DataGridView();
-            this.Pesquisar_tbx = new System.Windows.Forms.TextBox();
             this.Pesquisar_lbl = new System.Windows.Forms.Label();
             this.Excluir_btn = new System.Windows.Forms.Button();
             this.EspEsq_pnl = new System.Windows.Forms.Panel();
@@ -43,12 +42,16 @@
             this.Cadastrar_pnl = new System.Windows.Forms.Panel();
             this.Cadastrar_btn = new System.Windows.Forms.Button();
             this.H1_lbl = new System.Windows.Forms.Label();
+            this.BarraPesquisa_pnl = new System.Windows.Forms.Panel();
+            this.Pesquisar_tbx = new System.Windows.Forms.TextBox();
+            this.Pesquisar_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ListaComps_dgv)).BeginInit();
             this.Corpo_pnl.SuspendLayout();
             this.BarraInf_pnl.SuspendLayout();
             this.BarraSup_pnl.SuspendLayout();
             this.Pesquisar_pnl.SuspendLayout();
             this.Cadastrar_pnl.SuspendLayout();
+            this.BarraPesquisa_pnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // ListaComps_dgv
@@ -58,6 +61,7 @@
             this.ListaComps_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ListaComps_dgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListaComps_dgv.Location = new System.Drawing.Point(0, 114);
+            this.ListaComps_dgv.MultiSelect = false;
             this.ListaComps_dgv.Name = "ListaComps_dgv";
             this.ListaComps_dgv.ReadOnly = true;
             this.ListaComps_dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -66,14 +70,6 @@
             this.ListaComps_dgv.TabIndex = 2;
             this.ListaComps_dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowEnter);
             this.ListaComps_dgv.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowLeave);
-            // 
-            // Pesquisar_tbx
-            // 
-            this.Pesquisar_tbx.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Pesquisar_tbx.Location = new System.Drawing.Point(12, 17);
-            this.Pesquisar_tbx.Name = "Pesquisar_tbx";
-            this.Pesquisar_tbx.Size = new System.Drawing.Size(382, 20);
-            this.Pesquisar_tbx.TabIndex = 1;
             // 
             // Pesquisar_lbl
             // 
@@ -160,7 +156,7 @@
             // 
             // Pesquisar_pnl
             // 
-            this.Pesquisar_pnl.Controls.Add(this.Pesquisar_tbx);
+            this.Pesquisar_pnl.Controls.Add(this.BarraPesquisa_pnl);
             this.Pesquisar_pnl.Controls.Add(this.Pesquisar_lbl);
             this.Pesquisar_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pesquisar_pnl.Location = new System.Drawing.Point(150, 0);
@@ -201,6 +197,35 @@
             this.H1_lbl.TabIndex = 0;
             this.H1_lbl.Text = "Cadastro de Componentes";
             // 
+            // BarraPesquisa_pnl
+            // 
+            this.BarraPesquisa_pnl.Controls.Add(this.Pesquisar_tbx);
+            this.BarraPesquisa_pnl.Controls.Add(this.Pesquisar_btn);
+            this.BarraPesquisa_pnl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraPesquisa_pnl.Location = new System.Drawing.Point(12, 17);
+            this.BarraPesquisa_pnl.Name = "BarraPesquisa_pnl";
+            this.BarraPesquisa_pnl.Size = new System.Drawing.Size(382, 20);
+            this.BarraPesquisa_pnl.TabIndex = 1;
+            // 
+            // Pesquisar_tbx
+            // 
+            this.Pesquisar_tbx.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pesquisar_tbx.Location = new System.Drawing.Point(0, 0);
+            this.Pesquisar_tbx.Name = "Pesquisar_tbx";
+            this.Pesquisar_tbx.Size = new System.Drawing.Size(350, 20);
+            this.Pesquisar_tbx.TabIndex = 0;
+            // 
+            // Pesquisar_btn
+            // 
+            this.Pesquisar_btn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Pesquisar_btn.Location = new System.Drawing.Point(350, 0);
+            this.Pesquisar_btn.Name = "Pesquisar_btn";
+            this.Pesquisar_btn.Size = new System.Drawing.Size(32, 20);
+            this.Pesquisar_btn.TabIndex = 1;
+            this.Pesquisar_btn.Text = "👁";
+            this.Pesquisar_btn.UseVisualStyleBackColor = true;
+            this.Pesquisar_btn.Click += new System.EventHandler(this.Pesquisar_btn_Click);
+            // 
             // frmCadastroComponentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,6 +248,8 @@
             this.Pesquisar_pnl.ResumeLayout(false);
             this.Pesquisar_pnl.PerformLayout();
             this.Cadastrar_pnl.ResumeLayout(false);
+            this.BarraPesquisa_pnl.ResumeLayout(false);
+            this.BarraPesquisa_pnl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,7 +257,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView ListaComps_dgv;
-        private System.Windows.Forms.TextBox Pesquisar_tbx;
         private System.Windows.Forms.Label Pesquisar_lbl;
         private System.Windows.Forms.Button Excluir_btn;
         private System.Windows.Forms.Panel EspEsq_pnl;
@@ -243,5 +269,8 @@
         private System.Windows.Forms.Panel Pesquisar_pnl;
         private System.Windows.Forms.Panel Cadastrar_pnl;
         private System.Windows.Forms.Button Cadastrar_btn;
+        private System.Windows.Forms.Panel BarraPesquisa_pnl;
+        private System.Windows.Forms.TextBox Pesquisar_tbx;
+        private System.Windows.Forms.Button Pesquisar_btn;
     }
 }

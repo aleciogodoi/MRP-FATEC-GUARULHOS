@@ -169,6 +169,58 @@ namespace MRP_SacoCarvao
             return listaComponentes;
         }
 
+        public List<Componente> PesquisaComponentes(string pesquisa)
+        {
+            List<Componente> listaComponentes = new List<Componente>();
+            Componente objComponente;
+            Conexao conexao = new Conexao();
+
+            if (conexao.mErro.Length > 0)
+            {
+                return null;
+            }
+
+            try
+            {
+                MySqlDataReader reader;
+                string query = "SELECT * FROM componente " +
+                    "WHERE idComponente LIKE @pesquisa " +
+                    "OR tipoComponente LIKE @pesquisa " +
+                    "OR modeloComponente LIKE @pesquisa " +
+                    "OR especificacao LIKE @pesquisa;";
+                MySqlCommand cmd = new MySqlCommand(query, conexao.conn);
+                if (!conexao.OpenConexao())
+                {
+                    return null;
+                }
+
+                cmd.Parameters.AddWithValue("@pesquisa", pesquisa);
+                cmd.Prepare();
+                Console.WriteLine(query);
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    objComponente = new Componente();
+                    objComponente.idComponente = Convert.ToInt32(reader["idComponente"]);
+                    objComponente.tipoComponente = (string)reader["tipoComponente"];
+                    objComponente.modeloComponente = (string)reader["modeloComponente"];
+                    objComponente.qtdeMinEstoque = Convert.ToInt32(reader["qtdeMinEstoque"]);
+                    objComponente.qtdeMaxEstoque = Convert.ToInt32(reader["qtdeMaxEstoque"]);
+                    objComponente.qtdeAtualEstoque = Convert.ToInt32(reader["qtdeAtualEstoque"]);
+                    objComponente.especificacao = (reader["especificacao"] != DBNull.Value ? (string)(reader["especificacao"]) : "");
+
+                    listaComponentes.Add(objComponente);
+                }
+            }
+            catch (MySqlException e)
+            {
+            }
+            conexao.CloseConexao();
+            return listaComponentes;
+        }
+
         public Componente Get(int id)
         {
             Componente objComponente = new Componente();

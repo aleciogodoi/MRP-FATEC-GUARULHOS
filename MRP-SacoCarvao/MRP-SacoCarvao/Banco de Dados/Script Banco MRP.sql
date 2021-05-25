@@ -153,7 +153,7 @@ SELECT
  p.idProduto,
  p.nomeProduto,
  c.idComponente,
- c.tipoComponente,
+ c.modeloComponente,
  g.idGrupo,
  g.nomeGrupo
 From Produto p

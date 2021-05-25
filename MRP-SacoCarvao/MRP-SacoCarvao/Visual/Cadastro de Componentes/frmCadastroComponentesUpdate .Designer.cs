@@ -39,8 +39,8 @@
             this.Modelo_pnl = new System.Windows.Forms.Panel();
             this.Modelo_tbx = new System.Windows.Forms.TextBox();
             this.Modelo_lbl = new System.Windows.Forms.Label();
-            this.H1_lbl = new System.Windows.Forms.Label();
             this.Cod_lbl = new System.Windows.Forms.Label();
+            this.H1_lbl = new System.Windows.Forms.Label();
             this.Corpo_pnl.SuspendLayout();
             this.BarraInf_pnl.SuspendLayout();
             this.Modelo_pnl.SuspendLayout();
@@ -52,7 +52,7 @@
             this.EspEsq_pnl.Location = new System.Drawing.Point(0, 0);
             this.EspEsq_pnl.Name = "EspEsq_pnl";
             this.EspEsq_pnl.Size = new System.Drawing.Size(32, 393);
-            this.EspEsq_pnl.TabIndex = 21;
+            this.EspEsq_pnl.TabIndex = 5;
             // 
             // EspDir_pnl
             // 
@@ -60,7 +60,7 @@
             this.EspDir_pnl.Location = new System.Drawing.Point(272, 0);
             this.EspDir_pnl.Name = "EspDir_pnl";
             this.EspDir_pnl.Size = new System.Drawing.Size(32, 393);
-            this.EspDir_pnl.TabIndex = 20;
+            this.EspDir_pnl.TabIndex = 6;
             // 
             // Corpo_pnl
             // 
@@ -87,7 +87,7 @@
             this.BarraInf_pnl.Location = new System.Drawing.Point(32, 345);
             this.BarraInf_pnl.Name = "BarraInf_pnl";
             this.BarraInf_pnl.Size = new System.Drawing.Size(240, 48);
-            this.BarraInf_pnl.TabIndex = 10;
+            this.BarraInf_pnl.TabIndex = 4;
             // 
             // Cancelar_btn
             // 
@@ -119,7 +119,7 @@
             this.Especs_pnl.Location = new System.Drawing.Point(32, 112);
             this.Especs_pnl.Name = "Especs_pnl";
             this.Especs_pnl.Size = new System.Drawing.Size(240, 0);
-            this.Especs_pnl.TabIndex = 22;
+            this.Especs_pnl.TabIndex = 3;
             // 
             // Modelo_pnl
             // 
@@ -151,6 +151,18 @@
             this.Modelo_lbl.TabIndex = 0;
             this.Modelo_lbl.Text = "Modelo do Componente";
             // 
+            // Cod_lbl
+            // 
+            this.Cod_lbl.AutoSize = true;
+            this.Cod_lbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Cod_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cod_lbl.Location = new System.Drawing.Point(32, 34);
+            this.Cod_lbl.Name = "Cod_lbl";
+            this.Cod_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.Cod_lbl.Size = new System.Drawing.Size(32, 30);
+            this.Cod_lbl.TabIndex = 1;
+            this.Cod_lbl.Text = "000";
+            // 
             // H1_lbl
             // 
             this.H1_lbl.AutoSize = true;
@@ -162,18 +174,6 @@
             this.H1_lbl.Size = new System.Drawing.Size(118, 34);
             this.H1_lbl.TabIndex = 0;
             this.H1_lbl.Text = "Placa de vídeo";
-            // 
-            // Cod_lbl
-            // 
-            this.Cod_lbl.AutoSize = true;
-            this.Cod_lbl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Cod_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cod_lbl.Location = new System.Drawing.Point(32, 34);
-            this.Cod_lbl.Name = "Cod_lbl";
-            this.Cod_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.Cod_lbl.Size = new System.Drawing.Size(32, 30);
-            this.Cod_lbl.TabIndex = 23;
-            this.Cod_lbl.Text = "000";
             // 
             // frmCadastroComponentesUpdate
             // 

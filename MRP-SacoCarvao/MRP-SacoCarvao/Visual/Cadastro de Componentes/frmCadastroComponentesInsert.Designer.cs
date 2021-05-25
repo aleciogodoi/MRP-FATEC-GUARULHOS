@@ -90,7 +90,7 @@
             this.BarraInf_pnl.Location = new System.Drawing.Point(32, 345);
             this.BarraInf_pnl.Name = "BarraInf_pnl";
             this.BarraInf_pnl.Size = new System.Drawing.Size(240, 48);
-            this.BarraInf_pnl.TabIndex = 10;
+            this.BarraInf_pnl.TabIndex = 4;
             // 
             // Cancelar_btn
             // 
@@ -122,8 +122,7 @@
             this.Especs_pnl.Location = new System.Drawing.Point(32, 148);
             this.Especs_pnl.Name = "Especs_pnl";
             this.Especs_pnl.Size = new System.Drawing.Size(240, 0);
-            this.Especs_pnl.TabIndex = 22;
-            this.Especs_pnl.Visible = false;
+            this.Especs_pnl.TabIndex = 3;
             // 
             // Modelo_pnl
             // 
@@ -183,7 +182,7 @@
             this.Tipo_cbb.Name = "Tipo_cbb";
             this.Tipo_cbb.Size = new System.Drawing.Size(240, 21);
             this.Tipo_cbb.TabIndex = 2;
-            this.Tipo_cbb.SelectionChangeCommitted += new System.EventHandler(this.Tipo_cbb_SelectionChangeCommitted);
+            this.Tipo_cbb.TextChanged += new System.EventHandler(this.Tipo_cbb_TextChanged);
             // 
             // Tipo_lbl
             // 

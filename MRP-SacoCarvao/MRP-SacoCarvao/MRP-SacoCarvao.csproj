@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="Conexao\ComponenteDAO.cs" />
     <Compile Include="Modelo\Componente.cs" />
+    <Compile Include="Visual\Cadastro de Componentes\Controles\pnlEspecificacao.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Componentes\Controles\pnlEspecificacao.Designer.cs">
+      <DependentUpon>pnlEspecificacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentes .cs">
       <SubType>Form</SubType>
     </Compile>

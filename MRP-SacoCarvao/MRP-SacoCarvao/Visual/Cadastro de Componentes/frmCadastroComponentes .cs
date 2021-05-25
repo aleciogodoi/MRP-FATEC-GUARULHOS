@@ -22,6 +22,19 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
             var lista = new BindingList<Componente>(listaComponentes);
             ListaComps_dgv.DataSource = lista;
         }
+        private void Pesquisar( string pesquisa)
+        {
+            ComponenteDAO objCompDAO = new ComponenteDAO();
+            List<Componente> listaComponentes = new List<Componente>();
+
+            if (pesquisa != "")
+                listaComponentes = objCompDAO.PesquisaComponentes(pesquisa);
+            else
+                listaComponentes = objCompDAO.GetComponentes();
+
+            var lista = new BindingList<Componente>(listaComponentes);
+            ListaComps_dgv.DataSource = lista;
+        }
 
         // funcoes do formulario
         private void FormCadastroComponentes_Load(object sender, EventArgs e)
@@ -64,7 +77,20 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
             }
         }
 
-        /// botoes
+        /// pesquisa
+        private void Pesquisar_tbx_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Pesquisar(Pesquisar_tbx.Text);
+            }
+        }
+        private void Pesquisar_btn_Click(object sender, EventArgs e)
+        {
+            Pesquisar(Pesquisar_tbx.Text);
+        }
+
+        /// botoes de validacao
         private void BtnCadastrar_Click(object sender, EventArgs e)
         {
             frmCadastroComponentesInsert objFrmCadastroInsert = new frmCadastroComponentesInsert();
@@ -93,5 +119,6 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
             }
             AtualizaLista();
         }
+
     }
 }
