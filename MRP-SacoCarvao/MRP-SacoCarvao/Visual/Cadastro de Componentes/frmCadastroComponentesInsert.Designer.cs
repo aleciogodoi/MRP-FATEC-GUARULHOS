@@ -98,7 +98,7 @@
             this.Cancelar_btn.Location = new System.Drawing.Point(3, 10);
             this.Cancelar_btn.Name = "Cancelar_btn";
             this.Cancelar_btn.Size = new System.Drawing.Size(112, 23);
-            this.Cancelar_btn.TabIndex = 0;
+            this.Cancelar_btn.TabIndex = 1;
             this.Cancelar_btn.Text = "Cancelar";
             this.Cancelar_btn.UseVisualStyleBackColor = true;
             this.Cancelar_btn.Click += new System.EventHandler(this.Cancelar_btn_Click);
@@ -110,7 +110,7 @@
             this.OK_btn.Location = new System.Drawing.Point(125, 10);
             this.OK_btn.Name = "OK_btn";
             this.OK_btn.Size = new System.Drawing.Size(112, 23);
-            this.OK_btn.TabIndex = 1;
+            this.OK_btn.TabIndex = 0;
             this.OK_btn.Text = "OK";
             this.OK_btn.UseVisualStyleBackColor = true;
             this.OK_btn.Click += new System.EventHandler(this.OK_btn_Click);
@@ -214,8 +214,9 @@
             this.ClientSize = new System.Drawing.Size(304, 393);
             this.Controls.Add(this.Corpo_pnl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(272, 0);
             this.Name = "frmCadastroComponentesInsert";
-            this.Text = "frmCadastroComponentesInsert";
+            this.Text = "Cadastrar componente";
             this.Corpo_pnl.ResumeLayout(false);
             this.Corpo_pnl.PerformLayout();
             this.BarraInf_pnl.ResumeLayout(false);

@@ -36,5 +36,23 @@ namespace MRP_SacoCarvao
             };
             frmCadastroGrupos.Show();
         }
+
+        private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Compras.frmCompras objFrmCompras = new Compras.frmCompras
+            {
+                MdiParent = this
+            };
+            objFrmCompras.Show();
+        }
+
+        private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastro_de_Fornecedores.frmCadastroFornecedores objFrmFornecedores = new Cadastro_de_Fornecedores.frmCadastroFornecedores
+            {
+                MdiParent = this
+            };
+            objFrmFornecedores.Show();
+        }
     }
 }

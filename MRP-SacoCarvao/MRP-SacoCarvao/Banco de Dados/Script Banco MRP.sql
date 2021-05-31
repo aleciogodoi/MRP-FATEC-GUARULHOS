@@ -53,7 +53,7 @@ ADD CONSTRAINT FK_ESTRUTURAPRODUTO_COMPONENTE
 FOREIGN KEY (idComponente) REFERENCES COMPONENTE(idComponente);
 
 CREATE TABLE FORNECEDOR (
- idFornecedor int primary key,
+ idFornecedor int primary key AUTO_INCREMENT,
  nomeFornecedor varchar(100),
  tipoLogradouro varchar(20),
  logradouro varchar(150),

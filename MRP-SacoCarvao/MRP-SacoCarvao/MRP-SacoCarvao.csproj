@@ -50,19 +50,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexao\FornecedorDAO.cs" />
     <Compile Include="Conexao\ComponenteDAO.cs" />
     <Compile Include="Modelo\Componente.cs" />
+    <Compile Include="Modelo\Fornecedor.cs" />
     <Compile Include="Visual\Cadastro de Componentes\Controles\pnlEspecificacao.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Visual\Cadastro de Componentes\Controles\pnlEspecificacao.Designer.cs">
       <DependentUpon>pnlEspecificacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentes .cs">
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentes .Designer.cs">
-      <DependentUpon>frmCadastroComponentes .cs</DependentUpon>
+    <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentes.Designer.cs">
+      <DependentUpon>frmCadastroComponentes.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexao\ProdutoDAO.cs" />
     <Compile Include="Modelo\Produto.cs" />
@@ -78,6 +80,30 @@
     </Compile>
     <Compile Include="Visual\Cadastro de Componentes\frmCadastroComponentesInsert.Designer.cs">
       <DependentUpon>frmCadastroComponentesInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedoresInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedoresInsert.Designer.cs">
+      <DependentUpon>frmCadastroFornecedoresInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedoresUpdate .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedoresUpdate .Designer.cs">
+      <DependentUpon>frmCadastroFornecedoresUpdate .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedores.Designer.cs">
+      <DependentUpon>frmCadastroFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\frmCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\frmCompras.Designer.cs">
+      <DependentUpon>frmCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="Visual\frmMenu.cs">
       <SubType>Form</SubType>
@@ -95,14 +121,26 @@
     <Compile Include="Conexao\GrupoDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentes .resx">
-      <DependentUpon>frmCadastroComponentes .cs</DependentUpon>
+    <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentes.resx">
+      <DependentUpon>frmCadastroComponentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentesUpdate .resx">
       <DependentUpon>frmCadastroComponentesUpdate .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentesInsert.resx">
       <DependentUpon>frmCadastroComponentesInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedoresInsert.resx">
+      <DependentUpon>frmCadastroFornecedoresInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedoresUpdate .resx">
+      <DependentUpon>frmCadastroFornecedoresUpdate .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedores.resx">
+      <DependentUpon>frmCadastroFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\frmCompras.resx">
+      <DependentUpon>frmCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
