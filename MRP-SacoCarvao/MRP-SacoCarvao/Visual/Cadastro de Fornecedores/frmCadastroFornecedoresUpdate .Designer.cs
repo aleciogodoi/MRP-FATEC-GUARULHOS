@@ -357,30 +357,30 @@
             this.UF_cbb.Items.AddRange(new object[] {
             "AC",
             "AL",
-            "AP",
             "AM",
+            "AP",
             "BA",
             "CE",
             "DF",
             "ES",
             "GO",
             "MA",
-            "MT",
-            "MS",
             "MG",
+            "MS",
+            "MT",
             "PA",
             "PB",
-            "PR",
             "PE",
             "PI",
-            "RR",
-            "RO",
+            "PR",
             "RJ",
             "RN",
+            "RO",
+            "RR",
             "RS",
             "SC",
-            "SP",
             "SE",
+            "SP",
             "TO"});
             this.UF_cbb.Location = new System.Drawing.Point(12, 17);
             this.UF_cbb.Name = "UF_cbb";
@@ -672,7 +672,7 @@
             this.ClientSize = new System.Drawing.Size(544, 393);
             this.Controls.Add(this.Corpo_pnl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(512, 0);
+            this.MinimumSize = new System.Drawing.Size(512, 39);
             this.Name = "frmCadastroFornecedoresUpdate";
             this.Text = "Editar fornecedor";
             this.Corpo_pnl.ResumeLayout(false);

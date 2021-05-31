@@ -20,7 +20,8 @@ namespace MRP_SacoCarvao
         // funcoes dos objetos
         private void ComponentesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cadastro_de_Componentes.frmCadastroComponentes objFrmCadastroComps = new Cadastro_de_Componentes.frmCadastroComponentes
+            Cadastro_de_Componentes.frmCadastroComponentes objFrmCadastroComps = 
+                new Cadastro_de_Componentes.frmCadastroComponentes
             {
                 MdiParent = this
             };
@@ -29,7 +30,6 @@ namespace MRP_SacoCarvao
 
         private void GruposToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            produtosFinaisToolStripMenuItem.Checked = true;
             frmCadastroGrupos frmCadastroGrupos = new frmCadastroGrupos
             {
                 MdiParent = this
@@ -48,7 +48,8 @@ namespace MRP_SacoCarvao
 
         private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cadastro_de_Fornecedores.frmCadastroFornecedores objFrmFornecedores = new Cadastro_de_Fornecedores.frmCadastroFornecedores
+            Cadastro_de_Fornecedores.frmCadastroFornecedores objFrmFornecedores = 
+                new Cadastro_de_Fornecedores.frmCadastroFornecedores
             {
                 MdiParent = this
             };
