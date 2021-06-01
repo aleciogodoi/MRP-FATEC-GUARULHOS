@@ -16,10 +16,10 @@ Não que esteja difícil de entender o código, só tá difícil dar o primeiro 
 ### Git
 1. Baixe e instale o [Git](https://git-scm.com/downloads) no seu computador.
 
-2. Configure o [Git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git) com o nome de usuário que quiser e o email que você usou pra se cadastrar no gitHub.
+2. [Configure o Git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git) com o nome de usuário que quiser e o email que você usou pra se cadastrar no gitHub.
 
 ### mySql
-1. Baixe o [MySQL Workbench](https://dev.mysql.com/downloads/workbench/), instale o programa e [configure um servidor](https://www.devmedia.com.br/introducao-ao-novo-mysql-workbench/25939).
+1. Baixe o [MySQL Workbench](https://dev.mysql.com/downloads/workbench/), instale o programa e [configure um servidor](https://www.alura.com.br/artigos/mysql-do-download-e-instalacao-ate-sua-primeira-tabela).
 
 2. Baixe e instale o [conector MySQL/.NET](https://dev.mysql.com/downloads/connector/net/).
 
