@@ -16,14 +16,9 @@ namespace MRP_SacoCarvao.Compras
             Componente_cbb.Text = paramMovi.idComponente.ToString();
         }
 
-        // variaveis
-        MovimentacaoEstoque objMovi = new MovimentacaoEstoque();
-
         // funcoes dos controles
         public frmComprasView( MovimentacaoEstoque paramMovimentacao )
         {
-            objMovi = paramMovimentacao;
-
             InitializeComponent();
             SetCampos( paramMovimentacao );
         }
