@@ -107,11 +107,11 @@
     <Compile Include="Visual\Compras\frmComprasInsert.Designer.cs">
       <DependentUpon>frmComprasInsert.cs</DependentUpon>
     </Compile>
-    <Compile Include="Visual\Compras\frmComprasView .cs">
+    <Compile Include="Visual\Compras\frmComprasView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Visual\Compras\frmComprasView .Designer.cs">
-      <DependentUpon>frmComprasView .cs</DependentUpon>
+    <Compile Include="Visual\Compras\frmComprasView.Designer.cs">
+      <DependentUpon>frmComprasView.cs</DependentUpon>
     </Compile>
     <Compile Include="Visual\Compras\frmCompras.cs">
       <SubType>Form</SubType>
@@ -156,8 +156,8 @@
     <EmbeddedResource Include="Visual\Compras\frmComprasInsert.resx">
       <DependentUpon>frmComprasInsert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Visual\Compras\frmComprasView .resx">
-      <DependentUpon>frmComprasView .cs</DependentUpon>
+    <EmbeddedResource Include="Visual\Compras\frmComprasView.resx">
+      <DependentUpon>frmComprasView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\Compras\frmCompras.resx">
       <DependentUpon>frmCompras.cs</DependentUpon>
