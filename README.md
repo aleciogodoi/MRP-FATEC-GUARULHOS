@@ -79,7 +79,7 @@ Pronto, mudança feita, espero que tenha valido a pena.
 
 ![dica](/img/dica.png)
 
-## Coisas à fazer
+## Coisas a fazer
 
 - Documentação dos módulos
     - Diagrama de Caso de Uso
