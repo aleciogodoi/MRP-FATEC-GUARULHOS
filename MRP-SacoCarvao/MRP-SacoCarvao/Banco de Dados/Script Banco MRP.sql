@@ -100,7 +100,7 @@ ADD CONSTRAINT FK_MOVIMENTACAOESTOQUEPRODUTO_PRODUTO
 FOREIGN KEY (idProduto) REFERENCES Produto(idProduto);
 
 CREATE TABLE MOVIMENTACAOESTOQUECOMPONENTE (
-  idMovimentacaoComponente int primary key,
+  idMovimentacaoComponente int primary key AUTO_INCREMENT,
   dataMovimentacao date not null,
   tipoDocumento varchar(30) not null,
   nrDocumento varchar(30) not null,

@@ -50,8 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexao\MovimentacaoEstoqueDAO.cs" />
     <Compile Include="Conexao\FornecedorDAO.cs" />
     <Compile Include="Conexao\ComponenteDAO.cs" />
+    <Compile Include="Modelo\MovimentacaoEstoque.cs" />
     <Compile Include="Modelo\Componente.cs" />
     <Compile Include="Modelo\Fornecedor.cs" />
     <Compile Include="Visual\Cadastro de Componentes\Controles\pnlEspecificacao.cs">
@@ -99,10 +101,22 @@
     <Compile Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedores.Designer.cs">
       <DependentUpon>frmCadastroFornecedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Visual\frmCompras.cs">
+    <Compile Include="Visual\Compras\frmComprasInsert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Visual\frmCompras.Designer.cs">
+    <Compile Include="Visual\Compras\frmComprasInsert.Designer.cs">
+      <DependentUpon>frmComprasInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Compras\frmComprasView .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Compras\frmComprasView .Designer.cs">
+      <DependentUpon>frmComprasView .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visual\Compras\frmCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visual\Compras\frmCompras.Designer.cs">
       <DependentUpon>frmCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="Visual\frmMenu.cs">
@@ -139,7 +153,13 @@
     <EmbeddedResource Include="Visual\Cadastro de Fornecedores\frmCadastroFornecedores.resx">
       <DependentUpon>frmCadastroFornecedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Visual\frmCompras.resx">
+    <EmbeddedResource Include="Visual\Compras\frmComprasInsert.resx">
+      <DependentUpon>frmComprasInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Compras\frmComprasView .resx">
+      <DependentUpon>frmComprasView .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visual\Compras\frmCompras.resx">
       <DependentUpon>frmCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\frmMenu.resx">

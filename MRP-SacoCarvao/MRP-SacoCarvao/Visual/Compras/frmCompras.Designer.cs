@@ -29,49 +29,50 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompras));
-            this.ListaComps_dgv = new System.Windows.Forms.DataGridView();
+            this.ListaCompras_dgv = new System.Windows.Forms.DataGridView();
             this.Pesquisar_lbl = new System.Windows.Forms.Label();
-            this.Excluir_btn = new System.Windows.Forms.Button();
+            this.Fornecedores_btn = new System.Windows.Forms.Button();
             this.EspEsq_pnl = new System.Windows.Forms.Panel();
             this.EspDir_pnl = new System.Windows.Forms.Panel();
             this.Corpo_pnl = new System.Windows.Forms.Panel();
             this.BarraInf_pnl = new System.Windows.Forms.Panel();
-            this.Editar_btn = new System.Windows.Forms.Button();
+            this.Visualizar_btn = new System.Windows.Forms.Button();
+            this.Estoque_btn = new System.Windows.Forms.Button();
             this.BarraSup_pnl = new System.Windows.Forms.Panel();
             this.Pesquisar_pnl = new System.Windows.Forms.Panel();
             this.BarraPesquisa_pnl = new System.Windows.Forms.Panel();
             this.Pesquisar_tbx = new System.Windows.Forms.TextBox();
             this.Pesquisar_btn = new System.Windows.Forms.Button();
-            this.Cadastrar_pnl = new System.Windows.Forms.Panel();
-            this.Cadastrar_btn = new System.Windows.Forms.Button();
+            this.Registrar_pnl = new System.Windows.Forms.Panel();
+            this.Registrar_btn = new System.Windows.Forms.Button();
             this.H1_lbl = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ListaComps_dgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListaCompras_dgv)).BeginInit();
             this.Corpo_pnl.SuspendLayout();
             this.BarraInf_pnl.SuspendLayout();
             this.BarraSup_pnl.SuspendLayout();
             this.Pesquisar_pnl.SuspendLayout();
             this.BarraPesquisa_pnl.SuspendLayout();
-            this.Cadastrar_pnl.SuspendLayout();
+            this.Registrar_pnl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ListaComps_dgv
+            // ListaCompras_dgv
             // 
-            this.ListaComps_dgv.AllowUserToAddRows = false;
-            this.ListaComps_dgv.AllowUserToDeleteRows = false;
-            this.ListaComps_dgv.BackgroundColor = System.Drawing.Color.White;
-            this.ListaComps_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ListaComps_dgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ListaComps_dgv.Location = new System.Drawing.Point(0, 114);
-            this.ListaComps_dgv.MultiSelect = false;
-            this.ListaComps_dgv.Name = "ListaComps_dgv";
-            this.ListaComps_dgv.ReadOnly = true;
-            this.ListaComps_dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ListaComps_dgv.Size = new System.Drawing.Size(544, 244);
-            this.ListaComps_dgv.StandardTab = true;
-            this.ListaComps_dgv.TabIndex = 2;
-            this.ListaComps_dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListaComps_dgv_CellDoubleClick);
-            this.ListaComps_dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowEnter);
-            this.ListaComps_dgv.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowLeave);
+            this.ListaCompras_dgv.AllowUserToAddRows = false;
+            this.ListaCompras_dgv.AllowUserToDeleteRows = false;
+            this.ListaCompras_dgv.BackgroundColor = System.Drawing.Color.White;
+            this.ListaCompras_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListaCompras_dgv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ListaCompras_dgv.Location = new System.Drawing.Point(0, 114);
+            this.ListaCompras_dgv.MultiSelect = false;
+            this.ListaCompras_dgv.Name = "ListaCompras_dgv";
+            this.ListaCompras_dgv.ReadOnly = true;
+            this.ListaCompras_dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ListaCompras_dgv.Size = new System.Drawing.Size(544, 244);
+            this.ListaCompras_dgv.StandardTab = true;
+            this.ListaCompras_dgv.TabIndex = 2;
+            this.ListaCompras_dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListaCompras_dgv_CellDoubleClick);
+            this.ListaCompras_dgv.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowEnter);
+            this.ListaCompras_dgv.RowLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_RowLeave);
             // 
             // Pesquisar_lbl
             // 
@@ -84,17 +85,16 @@
             this.Pesquisar_lbl.TabIndex = 0;
             this.Pesquisar_lbl.Text = "Pesquisar";
             // 
-            // Excluir_btn
+            // Fornecedores_btn
             // 
-            this.Excluir_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Excluir_btn.Enabled = false;
-            this.Excluir_btn.Location = new System.Drawing.Point(121, 10);
-            this.Excluir_btn.Name = "Excluir_btn";
-            this.Excluir_btn.Size = new System.Drawing.Size(112, 23);
-            this.Excluir_btn.TabIndex = 1;
-            this.Excluir_btn.Text = "Fornecedores";
-            this.Excluir_btn.UseVisualStyleBackColor = true;
-            this.Excluir_btn.Click += new System.EventHandler(this.BtnExcluir_Click);
+            this.Fornecedores_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Fornecedores_btn.Location = new System.Drawing.Point(429, 10);
+            this.Fornecedores_btn.Name = "Fornecedores_btn";
+            this.Fornecedores_btn.Size = new System.Drawing.Size(112, 23);
+            this.Fornecedores_btn.TabIndex = 2;
+            this.Fornecedores_btn.Text = "Fornecedores";
+            this.Fornecedores_btn.UseVisualStyleBackColor = true;
+            this.Fornecedores_btn.Click += new System.EventHandler(this.Fornecedores_btn_Click);
             // 
             // EspEsq_pnl
             // 
@@ -114,7 +114,7 @@
             // 
             // Corpo_pnl
             // 
-            this.Corpo_pnl.Controls.Add(this.ListaComps_dgv);
+            this.Corpo_pnl.Controls.Add(this.ListaCompras_dgv);
             this.Corpo_pnl.Controls.Add(this.BarraInf_pnl);
             this.Corpo_pnl.Controls.Add(this.BarraSup_pnl);
             this.Corpo_pnl.Controls.Add(this.H1_lbl);
@@ -126,30 +126,42 @@
             // 
             // BarraInf_pnl
             // 
-            this.BarraInf_pnl.Controls.Add(this.Editar_btn);
-            this.BarraInf_pnl.Controls.Add(this.Excluir_btn);
+            this.BarraInf_pnl.Controls.Add(this.Visualizar_btn);
+            this.BarraInf_pnl.Controls.Add(this.Estoque_btn);
+            this.BarraInf_pnl.Controls.Add(this.Fornecedores_btn);
             this.BarraInf_pnl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BarraInf_pnl.Location = new System.Drawing.Point(0, 358);
             this.BarraInf_pnl.Name = "BarraInf_pnl";
             this.BarraInf_pnl.Size = new System.Drawing.Size(544, 64);
             this.BarraInf_pnl.TabIndex = 3;
             // 
-            // Editar_btn
+            // Visualizar_btn
             // 
-            this.Editar_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Editar_btn.Enabled = false;
-            this.Editar_btn.Location = new System.Drawing.Point(3, 10);
-            this.Editar_btn.Name = "Editar_btn";
-            this.Editar_btn.Size = new System.Drawing.Size(112, 23);
-            this.Editar_btn.TabIndex = 0;
-            this.Editar_btn.Text = "Estoque";
-            this.Editar_btn.UseVisualStyleBackColor = true;
-            this.Editar_btn.Click += new System.EventHandler(this.BtnEditar_Click);
+            this.Visualizar_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Visualizar_btn.Enabled = false;
+            this.Visualizar_btn.Location = new System.Drawing.Point(3, 10);
+            this.Visualizar_btn.Name = "Visualizar_btn";
+            this.Visualizar_btn.Size = new System.Drawing.Size(112, 23);
+            this.Visualizar_btn.TabIndex = 0;
+            this.Visualizar_btn.Text = "Visualizar";
+            this.Visualizar_btn.UseVisualStyleBackColor = true;
+            this.Visualizar_btn.Click += new System.EventHandler(this.Visualizar_btn_Click);
+            // 
+            // Estoque_btn
+            // 
+            this.Estoque_btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Estoque_btn.Location = new System.Drawing.Point(311, 10);
+            this.Estoque_btn.Name = "Estoque_btn";
+            this.Estoque_btn.Size = new System.Drawing.Size(112, 23);
+            this.Estoque_btn.TabIndex = 1;
+            this.Estoque_btn.Text = "Estoque";
+            this.Estoque_btn.UseVisualStyleBackColor = true;
+            this.Estoque_btn.Click += new System.EventHandler(this.Estoque_btn_Click);
             // 
             // BarraSup_pnl
             // 
             this.BarraSup_pnl.Controls.Add(this.Pesquisar_pnl);
-            this.BarraSup_pnl.Controls.Add(this.Cadastrar_pnl);
+            this.BarraSup_pnl.Controls.Add(this.Registrar_pnl);
             this.BarraSup_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraSup_pnl.Location = new System.Drawing.Point(0, 66);
             this.BarraSup_pnl.Name = "BarraSup_pnl";
@@ -197,25 +209,25 @@
             this.Pesquisar_btn.UseVisualStyleBackColor = true;
             this.Pesquisar_btn.Click += new System.EventHandler(this.Pesquisar_btn_Click);
             // 
-            // Cadastrar_pnl
+            // Registrar_pnl
             // 
-            this.Cadastrar_pnl.Controls.Add(this.Cadastrar_btn);
-            this.Cadastrar_pnl.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Cadastrar_pnl.Location = new System.Drawing.Point(0, 0);
-            this.Cadastrar_pnl.Name = "Cadastrar_pnl";
-            this.Cadastrar_pnl.Size = new System.Drawing.Size(150, 48);
-            this.Cadastrar_pnl.TabIndex = 0;
+            this.Registrar_pnl.Controls.Add(this.Registrar_btn);
+            this.Registrar_pnl.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Registrar_pnl.Location = new System.Drawing.Point(0, 0);
+            this.Registrar_pnl.Name = "Registrar_pnl";
+            this.Registrar_pnl.Size = new System.Drawing.Size(150, 48);
+            this.Registrar_pnl.TabIndex = 0;
             // 
-            // Cadastrar_btn
+            // Registrar_btn
             // 
-            this.Cadastrar_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Cadastrar_btn.Location = new System.Drawing.Point(3, 15);
-            this.Cadastrar_btn.Name = "Cadastrar_btn";
-            this.Cadastrar_btn.Size = new System.Drawing.Size(144, 24);
-            this.Cadastrar_btn.TabIndex = 0;
-            this.Cadastrar_btn.Text = "Registrar Compra";
-            this.Cadastrar_btn.UseVisualStyleBackColor = true;
-            this.Cadastrar_btn.Click += new System.EventHandler(this.BtnCadastrar_Click);
+            this.Registrar_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Registrar_btn.Location = new System.Drawing.Point(3, 15);
+            this.Registrar_btn.Name = "Registrar_btn";
+            this.Registrar_btn.Size = new System.Drawing.Size(144, 24);
+            this.Registrar_btn.TabIndex = 0;
+            this.Registrar_btn.Text = "Registrar Compra";
+            this.Registrar_btn.UseVisualStyleBackColor = true;
+            this.Registrar_btn.Click += new System.EventHandler(this.Registrar_btn_Click);
             // 
             // H1_lbl
             // 
@@ -240,10 +252,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(448, 320);
             this.Name = "frmCompras";
-            this.Text = "Cadastro de Componentes";
-            this.Load += new System.EventHandler(this.FormCadastroComponentes_Load);
-            this.SizeChanged += new System.EventHandler(this.frmCadastroComponentes_SizeChanged);
-            ((System.ComponentModel.ISupportInitialize)(this.ListaComps_dgv)).EndInit();
+            this.Text = "Compras";
+            this.Load += new System.EventHandler(this.FormCompras_Load);
+            this.SizeChanged += new System.EventHandler(this.frmCompras_SizeChanged);
+            ((System.ComponentModel.ISupportInitialize)(this.ListaCompras_dgv)).EndInit();
             this.Corpo_pnl.ResumeLayout(false);
             this.Corpo_pnl.PerformLayout();
             this.BarraInf_pnl.ResumeLayout(false);
@@ -252,28 +264,29 @@
             this.Pesquisar_pnl.PerformLayout();
             this.BarraPesquisa_pnl.ResumeLayout(false);
             this.BarraPesquisa_pnl.PerformLayout();
-            this.Cadastrar_pnl.ResumeLayout(false);
+            this.Registrar_pnl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView ListaComps_dgv;
+        private System.Windows.Forms.DataGridView ListaCompras_dgv;
         private System.Windows.Forms.Label Pesquisar_lbl;
-        private System.Windows.Forms.Button Excluir_btn;
+        private System.Windows.Forms.Button Fornecedores_btn;
         private System.Windows.Forms.Panel EspEsq_pnl;
         private System.Windows.Forms.Panel EspDir_pnl;
         private System.Windows.Forms.Panel Corpo_pnl;
         private System.Windows.Forms.Label H1_lbl;
         private System.Windows.Forms.Panel BarraInf_pnl;
-        private System.Windows.Forms.Button Editar_btn;
+        private System.Windows.Forms.Button Estoque_btn;
         private System.Windows.Forms.Panel BarraSup_pnl;
         private System.Windows.Forms.Panel Pesquisar_pnl;
-        private System.Windows.Forms.Panel Cadastrar_pnl;
-        private System.Windows.Forms.Button Cadastrar_btn;
+        private System.Windows.Forms.Panel Registrar_pnl;
+        private System.Windows.Forms.Button Registrar_btn;
         private System.Windows.Forms.Panel BarraPesquisa_pnl;
         private System.Windows.Forms.TextBox Pesquisar_tbx;
         private System.Windows.Forms.Button Pesquisar_btn;
+        private System.Windows.Forms.Button Visualizar_btn;
     }
 }
