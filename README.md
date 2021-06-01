@@ -42,7 +42,7 @@ https://github.com/MRP-FATEC-GUARULHOS-ADS/MRP-FATEC-GUARULHOS.git
 
 ![clonando o repositório](/img/vs-git2.png)
 
-4. Depois de abrir a solução, veja se alguma referência do projeto não foi carregada corretamente (se tiver um símbolo amarelo do lado do nome da referência, ela teve algum problema).
+4. Depois de abrir a solução, veja se alguma referência do projeto não foi carregada corretamente (se tiver um símbolo amarelo do lado do nome da referência, ela teve algum problema ao ser carregada).
 
 ![erro carregando referências](/img/vs-git6.png)
 
@@ -50,7 +50,7 @@ https://github.com/MRP-FATEC-GUARULHOS-ADS/MRP-FATEC-GUARULHOS.git
 
 ![adicionando referências](/img/vs-gitrefs.png)
 
-Pronto, você já tem acesso ao projeto que a gente tá usando.
+Pronto, você já tem acesso ao projeto que a gente tá usando, tomara.
 
 ## Mantendo o projeto atualizado
 Agora toda vez que editar alguma coisa você deve se certificar que ele esteja atualizado. Pra isso cheque sempre no canto inferior direito do programa, uma setinha pra cima ↑ (Push) indica que tem mudanças que você fez e ainda não compartilhou, enquanto uma setinha pra baixo ↓ (Pull) indica que tem mudanças online que você ainda não baixou, tenha certeza de sempre estar atualizado (setinha pra cima do lado de um número 0) e na *branch* certa do projeto.
