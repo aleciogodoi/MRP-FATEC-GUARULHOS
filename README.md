@@ -42,7 +42,7 @@ https://github.com/MRP-FATEC-GUARULHOS-ADS/MRP-FATEC-GUARULHOS.git
 
 ![clonando o repositório](/img/vs-git2.png)
 
-4. Depois de abrir a solução, veja se alguma referência do projeto não foi carregada corretamente (se tiver um símbolo amarelo do lado do nome a referência, ela teve algum problema).
+4. Depois de abrir a solução, veja se alguma referência do projeto não foi carregada corretamente (se tiver um símbolo amarelo do lado do nome da referência, ela teve algum problema).
 
 ![erro carregando referências](/img/vs-git6.png)
 
