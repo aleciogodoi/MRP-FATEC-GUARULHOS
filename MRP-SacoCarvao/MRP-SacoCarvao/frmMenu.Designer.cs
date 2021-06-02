@@ -77,6 +77,7 @@
             this.produtosFinaisToolStripMenuItem.Name = "produtosFinaisToolStripMenuItem";
             this.produtosFinaisToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.produtosFinaisToolStripMenuItem.Text = "Produtos Finais";
+            this.produtosFinaisToolStripMenuItem.Click += new System.EventHandler(this.produtosFinaisToolStripMenuItem_Click);
             // 
             // componentesToolStripMenuItem
             // 

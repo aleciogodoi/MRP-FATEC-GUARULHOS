@@ -25,5 +25,11 @@ namespace MRP_SacoCarvao
             frmCadastroGrupos.MdiParent = this;
             frmCadastroGrupos.Show();
         }
+
+        private void produtosFinaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroProdutoFinal frm = new frmCadastroProdutoFinal();
+            frm.Show();
+        }
     }
 }
