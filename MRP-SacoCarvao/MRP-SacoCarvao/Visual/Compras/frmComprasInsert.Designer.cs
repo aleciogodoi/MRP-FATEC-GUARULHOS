@@ -35,17 +35,9 @@
             this.BarraInf_pnl = new System.Windows.Forms.Panel();
             this.Cancelar_btn = new System.Windows.Forms.Button();
             this.OK_btn = new System.Windows.Forms.Button();
-            this.BarraDocumento_pnl = new System.Windows.Forms.Panel();
-            this.Data_pnl = new System.Windows.Forms.Panel();
-            this.Data_lbl = new System.Windows.Forms.Label();
-            this.H1_lbl = new System.Windows.Forms.Label();
-            this.Data_dtp = new System.Windows.Forms.DateTimePicker();
-            this.Numero_pnl = new System.Windows.Forms.Panel();
-            this.Numero_tbx = new System.Windows.Forms.TextBox();
-            this.Numero_lbl = new System.Windows.Forms.Label();
-            this.TipoDoc_pnl = new System.Windows.Forms.Panel();
-            this.TipoDoc_cbb = new System.Windows.Forms.ComboBox();
-            this.TipoDoc_lbl = new System.Windows.Forms.Label();
+            this.Componente_pnl = new System.Windows.Forms.Panel();
+            this.Componente_cbb = new System.Windows.Forms.ComboBox();
+            this.Componente_lbl = new System.Windows.Forms.Label();
             this.BarraQtde_pnl = new System.Windows.Forms.Panel();
             this.Qtde_pnl = new System.Windows.Forms.Panel();
             this.Qtde_tbx = new System.Windows.Forms.TextBox();
@@ -53,19 +45,27 @@
             this.TipoMov_pnl = new System.Windows.Forms.Panel();
             this.TipoMov_cbb = new System.Windows.Forms.ComboBox();
             this.TipoMov_lbl = new System.Windows.Forms.Label();
-            this.Componente_pnl = new System.Windows.Forms.Panel();
-            this.Componente_cbb = new System.Windows.Forms.ComboBox();
-            this.Componente_lbl = new System.Windows.Forms.Label();
+            this.BarraDocumento_pnl = new System.Windows.Forms.Panel();
+            this.Numero_pnl = new System.Windows.Forms.Panel();
+            this.Numero_tbx = new System.Windows.Forms.TextBox();
+            this.Numero_lbl = new System.Windows.Forms.Label();
+            this.TipoDoc_pnl = new System.Windows.Forms.Panel();
+            this.TipoDoc_cbb = new System.Windows.Forms.ComboBox();
+            this.TipoDoc_lbl = new System.Windows.Forms.Label();
+            this.Data_pnl = new System.Windows.Forms.Panel();
+            this.Data_dtp = new System.Windows.Forms.DateTimePicker();
+            this.Data_lbl = new System.Windows.Forms.Label();
+            this.H1_lbl = new System.Windows.Forms.Label();
             this.Corpo_pnl.SuspendLayout();
             this.BarraInf_pnl.SuspendLayout();
-            this.BarraDocumento_pnl.SuspendLayout();
-            this.Data_pnl.SuspendLayout();
-            this.Numero_pnl.SuspendLayout();
-            this.TipoDoc_pnl.SuspendLayout();
+            this.Componente_pnl.SuspendLayout();
             this.BarraQtde_pnl.SuspendLayout();
             this.Qtde_pnl.SuspendLayout();
             this.TipoMov_pnl.SuspendLayout();
-            this.Componente_pnl.SuspendLayout();
+            this.BarraDocumento_pnl.SuspendLayout();
+            this.Numero_pnl.SuspendLayout();
+            this.TipoDoc_pnl.SuspendLayout();
+            this.Data_pnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // EspEsq_pnl
@@ -135,6 +135,114 @@
             this.OK_btn.UseVisualStyleBackColor = true;
             this.OK_btn.Click += new System.EventHandler(this.OK_btn_Click);
             // 
+            // Componente_pnl
+            // 
+            this.Componente_pnl.Controls.Add(this.Componente_cbb);
+            this.Componente_pnl.Controls.Add(this.Componente_lbl);
+            this.Componente_pnl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Componente_pnl.Location = new System.Drawing.Point(32, 196);
+            this.Componente_pnl.Name = "Componente_pnl";
+            this.Componente_pnl.Size = new System.Drawing.Size(240, 48);
+            this.Componente_pnl.TabIndex = 23;
+            // 
+            // Componente_cbb
+            // 
+            this.Componente_cbb.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Componente_cbb.FormattingEnabled = true;
+            this.Componente_cbb.Location = new System.Drawing.Point(0, 17);
+            this.Componente_cbb.Name = "Componente_cbb";
+            this.Componente_cbb.Size = new System.Drawing.Size(240, 21);
+            this.Componente_cbb.TabIndex = 2;
+            this.Componente_cbb.SelectedIndexChanged += new System.EventHandler(this.Required_TextChanged);
+            // 
+            // Componente_lbl
+            // 
+            this.Componente_lbl.AutoSize = true;
+            this.Componente_lbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Componente_lbl.Location = new System.Drawing.Point(0, 0);
+            this.Componente_lbl.Name = "Componente_lbl";
+            this.Componente_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this.Componente_lbl.Size = new System.Drawing.Size(67, 17);
+            this.Componente_lbl.TabIndex = 0;
+            this.Componente_lbl.Text = "Componente";
+            // 
+            // BarraQtde_pnl
+            // 
+            this.BarraQtde_pnl.Controls.Add(this.Qtde_pnl);
+            this.BarraQtde_pnl.Controls.Add(this.TipoMov_pnl);
+            this.BarraQtde_pnl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraQtde_pnl.Location = new System.Drawing.Point(32, 148);
+            this.BarraQtde_pnl.Name = "BarraQtde_pnl";
+            this.BarraQtde_pnl.Size = new System.Drawing.Size(240, 48);
+            this.BarraQtde_pnl.TabIndex = 22;
+            // 
+            // Qtde_pnl
+            // 
+            this.Qtde_pnl.Controls.Add(this.Qtde_tbx);
+            this.Qtde_pnl.Controls.Add(this.Qtde_lbl);
+            this.Qtde_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Qtde_pnl.Location = new System.Drawing.Point(96, 0);
+            this.Qtde_pnl.Name = "Qtde_pnl";
+            this.Qtde_pnl.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.Qtde_pnl.Size = new System.Drawing.Size(144, 48);
+            this.Qtde_pnl.TabIndex = 3;
+            // 
+            // Qtde_tbx
+            // 
+            this.Qtde_tbx.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Qtde_tbx.Location = new System.Drawing.Point(12, 17);
+            this.Qtde_tbx.Name = "Qtde_tbx";
+            this.Qtde_tbx.Size = new System.Drawing.Size(132, 20);
+            this.Qtde_tbx.TabIndex = 1;
+            this.Qtde_tbx.TextChanged += new System.EventHandler(this.Required_TextChanged);
+            // 
+            // Qtde_lbl
+            // 
+            this.Qtde_lbl.AutoSize = true;
+            this.Qtde_lbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Qtde_lbl.Location = new System.Drawing.Point(12, 0);
+            this.Qtde_lbl.Name = "Qtde_lbl";
+            this.Qtde_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this.Qtde_lbl.Size = new System.Drawing.Size(112, 17);
+            this.Qtde_lbl.TabIndex = 0;
+            this.Qtde_lbl.Text = "Quantidade comprada";
+            // 
+            // TipoMov_pnl
+            // 
+            this.TipoMov_pnl.Controls.Add(this.TipoMov_cbb);
+            this.TipoMov_pnl.Controls.Add(this.TipoMov_lbl);
+            this.TipoMov_pnl.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TipoMov_pnl.Location = new System.Drawing.Point(0, 0);
+            this.TipoMov_pnl.Name = "TipoMov_pnl";
+            this.TipoMov_pnl.Size = new System.Drawing.Size(96, 48);
+            this.TipoMov_pnl.TabIndex = 4;
+            // 
+            // TipoMov_cbb
+            // 
+            this.TipoMov_cbb.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TipoMov_cbb.FormattingEnabled = true;
+            this.TipoMov_cbb.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.TipoMov_cbb.Location = new System.Drawing.Point(0, 17);
+            this.TipoMov_cbb.Name = "TipoMov_cbb";
+            this.TipoMov_cbb.Size = new System.Drawing.Size(96, 21);
+            this.TipoMov_cbb.TabIndex = 2;
+            this.TipoMov_cbb.SelectedIndexChanged += new System.EventHandler(this.Required_TextChanged);
+            // 
+            // TipoMov_lbl
+            // 
+            this.TipoMov_lbl.AutoSize = true;
+            this.TipoMov_lbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TipoMov_lbl.Location = new System.Drawing.Point(0, 0);
+            this.TipoMov_lbl.Name = "TipoMov_lbl";
+            this.TipoMov_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this.TipoMov_lbl.Size = new System.Drawing.Size(77, 17);
+            this.TipoMov_lbl.TabIndex = 0;
+            this.TipoMov_lbl.Text = "Movimentação";
+            // 
             // BarraDocumento_pnl
             // 
             this.BarraDocumento_pnl.Controls.Add(this.Numero_pnl);
@@ -144,48 +252,6 @@
             this.BarraDocumento_pnl.Name = "BarraDocumento_pnl";
             this.BarraDocumento_pnl.Size = new System.Drawing.Size(240, 48);
             this.BarraDocumento_pnl.TabIndex = 2;
-            // 
-            // Data_pnl
-            // 
-            this.Data_pnl.Controls.Add(this.Data_dtp);
-            this.Data_pnl.Controls.Add(this.Data_lbl);
-            this.Data_pnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Data_pnl.Location = new System.Drawing.Point(32, 52);
-            this.Data_pnl.Name = "Data_pnl";
-            this.Data_pnl.Size = new System.Drawing.Size(240, 48);
-            this.Data_pnl.TabIndex = 1;
-            // 
-            // Data_lbl
-            // 
-            this.Data_lbl.AutoSize = true;
-            this.Data_lbl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Data_lbl.Location = new System.Drawing.Point(0, 0);
-            this.Data_lbl.Name = "Data_lbl";
-            this.Data_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.Data_lbl.Size = new System.Drawing.Size(117, 17);
-            this.Data_lbl.TabIndex = 0;
-            this.Data_lbl.Text = "Data da movimentação";
-            // 
-            // H1_lbl
-            // 
-            this.H1_lbl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.H1_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.H1_lbl.Location = new System.Drawing.Point(32, 0);
-            this.H1_lbl.Name = "H1_lbl";
-            this.H1_lbl.Padding = new System.Windows.Forms.Padding(0, 16, 0, 12);
-            this.H1_lbl.Size = new System.Drawing.Size(240, 52);
-            this.H1_lbl.TabIndex = 0;
-            this.H1_lbl.Text = "Registrar compra";
-            this.H1_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Data_dtp
-            // 
-            this.Data_dtp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Data_dtp.Location = new System.Drawing.Point(0, 17);
-            this.Data_dtp.Name = "Data_dtp";
-            this.Data_dtp.Size = new System.Drawing.Size(240, 20);
-            this.Data_dtp.TabIndex = 3;
-            this.Data_dtp.ValueChanged += new System.EventHandler(this.Required_TextChanged);
             // 
             // Numero_pnl
             // 
@@ -253,116 +319,47 @@
             this.TipoDoc_lbl.TabIndex = 0;
             this.TipoDoc_lbl.Text = "Tipo doc.";
             // 
-            // BarraQtde_pnl
+            // Data_pnl
             // 
-            this.BarraQtde_pnl.Controls.Add(this.Qtde_pnl);
-            this.BarraQtde_pnl.Controls.Add(this.TipoMov_pnl);
-            this.BarraQtde_pnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraQtde_pnl.Location = new System.Drawing.Point(32, 148);
-            this.BarraQtde_pnl.Name = "BarraQtde_pnl";
-            this.BarraQtde_pnl.Size = new System.Drawing.Size(240, 48);
-            this.BarraQtde_pnl.TabIndex = 22;
+            this.Data_pnl.Controls.Add(this.Data_dtp);
+            this.Data_pnl.Controls.Add(this.Data_lbl);
+            this.Data_pnl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Data_pnl.Location = new System.Drawing.Point(32, 52);
+            this.Data_pnl.Name = "Data_pnl";
+            this.Data_pnl.Size = new System.Drawing.Size(240, 48);
+            this.Data_pnl.TabIndex = 1;
             // 
-            // Qtde_pnl
+            // Data_dtp
             // 
-            this.Qtde_pnl.Controls.Add(this.Qtde_tbx);
-            this.Qtde_pnl.Controls.Add(this.Qtde_lbl);
-            this.Qtde_pnl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Qtde_pnl.Location = new System.Drawing.Point(96, 0);
-            this.Qtde_pnl.Name = "Qtde_pnl";
-            this.Qtde_pnl.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.Qtde_pnl.Size = new System.Drawing.Size(144, 48);
-            this.Qtde_pnl.TabIndex = 3;
+            this.Data_dtp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Data_dtp.Location = new System.Drawing.Point(0, 17);
+            this.Data_dtp.Name = "Data_dtp";
+            this.Data_dtp.Size = new System.Drawing.Size(240, 20);
+            this.Data_dtp.TabIndex = 3;
+            this.Data_dtp.ValueChanged += new System.EventHandler(this.Required_TextChanged);
             // 
-            // Qtde_tbx
+            // Data_lbl
             // 
-            this.Qtde_tbx.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Qtde_tbx.Location = new System.Drawing.Point(12, 17);
-            this.Qtde_tbx.Name = "Qtde_tbx";
-            this.Qtde_tbx.Size = new System.Drawing.Size(132, 20);
-            this.Qtde_tbx.TabIndex = 1;
-            this.Qtde_tbx.TextChanged += new System.EventHandler(this.Required_TextChanged);
+            this.Data_lbl.AutoSize = true;
+            this.Data_lbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Data_lbl.Location = new System.Drawing.Point(0, 0);
+            this.Data_lbl.Name = "Data_lbl";
+            this.Data_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this.Data_lbl.Size = new System.Drawing.Size(117, 17);
+            this.Data_lbl.TabIndex = 0;
+            this.Data_lbl.Text = "Data da movimentação";
             // 
-            // Qtde_lbl
+            // H1_lbl
             // 
-            this.Qtde_lbl.AutoSize = true;
-            this.Qtde_lbl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Qtde_lbl.Location = new System.Drawing.Point(12, 0);
-            this.Qtde_lbl.Name = "Qtde_lbl";
-            this.Qtde_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.Qtde_lbl.Size = new System.Drawing.Size(112, 17);
-            this.Qtde_lbl.TabIndex = 0;
-            this.Qtde_lbl.Text = "Quantidade comprada";
-            // 
-            // TipoMov_pnl
-            // 
-            this.TipoMov_pnl.Controls.Add(this.TipoMov_cbb);
-            this.TipoMov_pnl.Controls.Add(this.TipoMov_lbl);
-            this.TipoMov_pnl.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TipoMov_pnl.Location = new System.Drawing.Point(0, 0);
-            this.TipoMov_pnl.Name = "TipoMov_pnl";
-            this.TipoMov_pnl.Size = new System.Drawing.Size(96, 48);
-            this.TipoMov_pnl.TabIndex = 4;
-            // 
-            // TipoMov_cbb
-            // 
-            this.TipoMov_cbb.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TipoMov_cbb.FormattingEnabled = true;
-            this.TipoMov_cbb.Items.AddRange(new object[] {
-            "CNPJ",
-            "CPF",
-            "RG"});
-            this.TipoMov_cbb.Location = new System.Drawing.Point(0, 17);
-            this.TipoMov_cbb.Name = "TipoMov_cbb";
-            this.TipoMov_cbb.Size = new System.Drawing.Size(96, 21);
-            this.TipoMov_cbb.TabIndex = 2;
-            this.TipoMov_cbb.SelectedIndexChanged += new System.EventHandler(this.Required_TextChanged);
-            // 
-            // TipoMov_lbl
-            // 
-            this.TipoMov_lbl.AutoSize = true;
-            this.TipoMov_lbl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TipoMov_lbl.Location = new System.Drawing.Point(0, 0);
-            this.TipoMov_lbl.Name = "TipoMov_lbl";
-            this.TipoMov_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.TipoMov_lbl.Size = new System.Drawing.Size(77, 17);
-            this.TipoMov_lbl.TabIndex = 0;
-            this.TipoMov_lbl.Text = "Movimentação";
-            // 
-            // Componente_pnl
-            // 
-            this.Componente_pnl.Controls.Add(this.Componente_cbb);
-            this.Componente_pnl.Controls.Add(this.Componente_lbl);
-            this.Componente_pnl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Componente_pnl.Location = new System.Drawing.Point(32, 196);
-            this.Componente_pnl.Name = "Componente_pnl";
-            this.Componente_pnl.Size = new System.Drawing.Size(240, 48);
-            this.Componente_pnl.TabIndex = 23;
-            // 
-            // Componente_cbb
-            // 
-            this.Componente_cbb.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Componente_cbb.FormattingEnabled = true;
-            this.Componente_cbb.Items.AddRange(new object[] {
-            "CNPJ",
-            "CPF",
-            "RG"});
-            this.Componente_cbb.Location = new System.Drawing.Point(0, 17);
-            this.Componente_cbb.Name = "Componente_cbb";
-            this.Componente_cbb.Size = new System.Drawing.Size(240, 21);
-            this.Componente_cbb.TabIndex = 2;
-            this.Componente_cbb.SelectedIndexChanged += new System.EventHandler(this.Required_TextChanged);
-            // 
-            // Componente_lbl
-            // 
-            this.Componente_lbl.AutoSize = true;
-            this.Componente_lbl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Componente_lbl.Location = new System.Drawing.Point(0, 0);
-            this.Componente_lbl.Name = "Componente_lbl";
-            this.Componente_lbl.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.Componente_lbl.Size = new System.Drawing.Size(67, 17);
-            this.Componente_lbl.TabIndex = 0;
-            this.Componente_lbl.Text = "Componente";
+            this.H1_lbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.H1_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.H1_lbl.Location = new System.Drawing.Point(32, 0);
+            this.H1_lbl.Name = "H1_lbl";
+            this.H1_lbl.Padding = new System.Windows.Forms.Padding(0, 16, 0, 12);
+            this.H1_lbl.Size = new System.Drawing.Size(240, 52);
+            this.H1_lbl.TabIndex = 0;
+            this.H1_lbl.Text = "Registrar compra";
+            this.H1_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmComprasInsert
             // 
@@ -376,20 +373,20 @@
             this.Text = "Registrar compra";
             this.Corpo_pnl.ResumeLayout(false);
             this.BarraInf_pnl.ResumeLayout(false);
-            this.BarraDocumento_pnl.ResumeLayout(false);
-            this.Data_pnl.ResumeLayout(false);
-            this.Data_pnl.PerformLayout();
-            this.Numero_pnl.ResumeLayout(false);
-            this.Numero_pnl.PerformLayout();
-            this.TipoDoc_pnl.ResumeLayout(false);
-            this.TipoDoc_pnl.PerformLayout();
+            this.Componente_pnl.ResumeLayout(false);
+            this.Componente_pnl.PerformLayout();
             this.BarraQtde_pnl.ResumeLayout(false);
             this.Qtde_pnl.ResumeLayout(false);
             this.Qtde_pnl.PerformLayout();
             this.TipoMov_pnl.ResumeLayout(false);
             this.TipoMov_pnl.PerformLayout();
-            this.Componente_pnl.ResumeLayout(false);
-            this.Componente_pnl.PerformLayout();
+            this.BarraDocumento_pnl.ResumeLayout(false);
+            this.Numero_pnl.ResumeLayout(false);
+            this.Numero_pnl.PerformLayout();
+            this.TipoDoc_pnl.ResumeLayout(false);
+            this.TipoDoc_pnl.PerformLayout();
+            this.Data_pnl.ResumeLayout(false);
+            this.Data_pnl.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

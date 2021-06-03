@@ -32,7 +32,7 @@ namespace MRP_SacoCarvao
                 cmd.Parameters.AddWithValue("@nrDoc", movi.nrDocumento);
                 cmd.Parameters.AddWithValue("@tipoMov", movi.tipoMovimentacao);
                 cmd.Parameters.AddWithValue("@qnt", movi.qtde);
-                cmd.Parameters.AddWithValue("@idComp", movi.idComponente);
+                cmd.Parameters.AddWithValue("@idComp", movi.componente.idComponente);
                 cmd.Prepare();
 
                 reader = cmd.ExecuteReader();
@@ -63,13 +63,14 @@ namespace MRP_SacoCarvao
                     "SET qtdeAtualEstoque = qtdeAtualEstoque + @qnt " +
                     "WHERE idComponente = @idComp ; ";
                 MySqlCommand cmd = new MySqlCommand(query, conexao.conn);
+
                 if (!conexao.OpenConexao())
                 {
                     return false;
                 }
 
-                cmd.Parameters.AddWithValue("@idComp", movi.idComponente);
-                cmd.Parameters.AddWithValue("@qntatual", movi.qtde);
+                cmd.Parameters.AddWithValue("@idComp", movi.componente.idComponente);
+                cmd.Parameters.AddWithValue("@qnt", movi.qtde);
                 cmd.Prepare();
 
                 reader = cmd.ExecuteReader();
@@ -115,9 +116,10 @@ namespace MRP_SacoCarvao
                     objMovimentacao.dataMovimentacao = (DateTime)reader["dataMovimentacao"];
                     objMovimentacao.tipoDocumento = (string)reader["tipoDocumento"];
                     objMovimentacao.nrDocumento = (string)reader["nrDocumento"];
-                    objMovimentacao.tipoMovimentacao = (char)reader["tipoMovimentacao"];
+                    objMovimentacao.tipoMovimentacao = Convert.ToChar(reader["tipoMovimentacao"]);
                     objMovimentacao.qtde = Convert.ToInt32(reader["qtde"]);
-                    objMovimentacao.idComponente = Convert.ToInt32(reader["idComponente"]);
+                    ComponenteDAO compDAO = new ComponenteDAO();
+                    objMovimentacao.componente = compDAO.Get( Convert.ToInt32(reader["idComponente"]) );
 
                     listaMovimentacoes.Add(objMovimentacao);
                 }
@@ -168,9 +170,10 @@ namespace MRP_SacoCarvao
                     objMovimentacao.dataMovimentacao = (DateTime)reader["dataMovimentacao"];
                     objMovimentacao.tipoDocumento = (string)reader["tipoDocumento"];
                     objMovimentacao.nrDocumento = (string)reader["nrDocumento"];
-                    objMovimentacao.tipoMovimentacao = (char)reader["tipoMovimentacao"];
+                    objMovimentacao.tipoMovimentacao = Convert.ToChar(reader["tipoMovimentacao"]);
                     objMovimentacao.qtde = Convert.ToInt32(reader["qtde"]);
-                    objMovimentacao.idComponente = Convert.ToInt32(reader["idComponente"]);
+                    ComponenteDAO compDAO = new ComponenteDAO();
+                    objMovimentacao.componente = compDAO.Get(Convert.ToInt32(reader["idComponente"]));
 
                     listaMovimentacoes.Add(objMovimentacao);
                 }
@@ -212,9 +215,10 @@ namespace MRP_SacoCarvao
                 objMovimentacao.dataMovimentacao = (DateTime)reader["dataMovimentacao"];
                 objMovimentacao.tipoDocumento = (string)reader["tipoDocumento"];
                 objMovimentacao.nrDocumento = (string)reader["nrDocumento"];
-                objMovimentacao.tipoMovimentacao = (char)reader["tipoMovimentacao"];
+                objMovimentacao.tipoMovimentacao = Convert.ToChar(reader["tipoMovimentacao"]);
                 objMovimentacao.qtde = Convert.ToInt32(reader["qtde"]);
-                objMovimentacao.idComponente = Convert.ToInt32(reader["idComponente"]);
+                ComponenteDAO compDAO = new ComponenteDAO();
+                objMovimentacao.componente = compDAO.Get(Convert.ToInt32(reader["idComponente"]));
 
             }
             catch (MySqlException e)
@@ -223,43 +227,6 @@ namespace MRP_SacoCarvao
             }
             conexao.CloseConexao();
             return objMovimentacao;
-        }
-
-        public int GetQuantidadeAtual(int id)
-        {
-            int quantidade = 0;
-            Conexao conexao = new Conexao();
-
-            if (conexao.mErro.Length > 0)
-            {
-                return quantidade;
-            }
-
-            try
-            {
-                MySqlDataReader reader;
-                string query = "SELECT qtdeAtualEstoque FROM COMPONENTE WHERE idComponente = (@id)";
-                MySqlCommand cmd = new MySqlCommand(query, conexao.conn);
-                if (!conexao.OpenConexao())
-                {
-                    return quantidade;
-                }
-
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Prepare();
-
-                reader = cmd.ExecuteReader();
-                reader.Read();
-
-                quantidade = Convert.ToInt32(reader["qtdeAtualEstoque"]);
-
-            }
-            catch (MySqlException e)
-            {
-                return quantidade;
-            }
-            conexao.CloseConexao();
-            return quantidade;
         }
 
     }

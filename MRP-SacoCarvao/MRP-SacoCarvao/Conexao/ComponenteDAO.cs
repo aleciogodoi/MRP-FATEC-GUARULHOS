@@ -253,7 +253,7 @@ namespace MRP_SacoCarvao
                 objComponente.qtdeMinEstoque = Convert.ToInt32(reader["qtdeMinEstoque"]);
                 objComponente.qtdeMaxEstoque = Convert.ToInt32(reader["qtdeMaxEstoque"]);
                 objComponente.qtdeAtualEstoque = Convert.ToInt32(reader["qtdeAtualEstoque"]);
-                objComponente.especificacao = (string)(reader["especificacao"]);
+                objComponente.especificacao = (reader["especificacao"] != DBNull.Value ? (string)(reader["especificacao"]) : "");
 
             }
             catch (MySqlException e)

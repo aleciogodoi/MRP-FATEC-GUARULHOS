@@ -46,9 +46,9 @@ namespace MRP_SacoCarvao.Compras
             if (ListaCompras_dgv.ColumnCount > 6)
             {
                 if (ListaCompras_dgv.Width > 760)
-                    ListaCompras_dgv.Columns[1].Width = ListaCompras_dgv.Width - 660;
+                    ListaCompras_dgv.Columns[6].Width = ListaCompras_dgv.Width - 660;
                 else
-                    ListaCompras_dgv.Columns[1].Width = 100;
+                    ListaCompras_dgv.Columns[6].Width = 100;
             }
         }
 
@@ -102,7 +102,6 @@ namespace MRP_SacoCarvao.Compras
             MovimentacaoEstoque objMoviSelec = ListaCompras_dgv.CurrentRow.DataBoundItem as MovimentacaoEstoque;
             frmComprasView objFrmComprasView = new frmComprasView( objMoviSelec );
             objFrmComprasView.ShowDialog();
-            AtualizaLista();
         }
 
         private void Estoque_btn_Click(object sender, EventArgs e)

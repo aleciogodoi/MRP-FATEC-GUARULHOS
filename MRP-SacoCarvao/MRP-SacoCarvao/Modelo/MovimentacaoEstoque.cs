@@ -11,7 +11,7 @@ namespace MRP_SacoCarvao
         public string nrDocumento { get; set; }
         public char tipoMovimentacao { get; set; }
         public int qtde { get; set; }
-        public int idComponente { get; set; }
+        public Componente componente { get; set; }
 
         // Construtores
         public MovimentacaoEstoque() {
@@ -30,7 +30,10 @@ namespace MRP_SacoCarvao
             this.nrDocumento = nr;
             this.tipoMovimentacao = tipoMov;
             this.qtde = qnt;
-            this.idComponente = idComp;
+
+            ComponenteDAO compDAO = new ComponenteDAO();
+            this.componente = compDAO.Get(idComp);
+
         }
 
     }

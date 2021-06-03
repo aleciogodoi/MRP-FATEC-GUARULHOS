@@ -33,6 +33,11 @@ namespace MRP_SacoCarvao
             this.especificacao = espec;
         }
 
+        public override string ToString()
+        {
+            return this.modeloComponente;
+        }
+
         public List<string> GetEspecificacoes ()
         {
             List<string> especs = new List<string>();

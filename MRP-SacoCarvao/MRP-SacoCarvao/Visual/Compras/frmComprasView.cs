@@ -8,12 +8,24 @@ namespace MRP_SacoCarvao.Compras
         private void SetCampos(MovimentacaoEstoque paramMovi)
         {
             H1_lbl.Text = paramMovi.idMovimentacaoComponente.ToString();
-            Data_dtp.Text = paramMovi.dataMovimentacao.ToString();
-            TipoDoc_cbb.Text = paramMovi.tipoDocumento;
+
+            Data_tbx.Text = paramMovi.dataMovimentacao.ToString("dd/MM/yyyy");
+            Data_tbx.ReadOnly = true;
+
+            TipoDoc_tbx.Text = paramMovi.tipoDocumento;
+            TipoDoc_tbx.ReadOnly = true;
+
             Numero_tbx.Text = paramMovi.nrDocumento;
-            TipoMov_cbb.Text = paramMovi.tipoMovimentacao.ToString();
+            Numero_tbx.ReadOnly = true;
+
+            TipoMov_tbx.Text = paramMovi.tipoMovimentacao.ToString();
+            TipoMov_tbx.ReadOnly = true;
+
             Qtde_tbx.Text = paramMovi.qtde.ToString();
-            Componente_cbb.Text = paramMovi.idComponente.ToString();
+            Qtde_tbx.ReadOnly = true;
+
+            Componente_tbx.Text = paramMovi.componente.modeloComponente.ToString();
+            Componente_tbx.ReadOnly = true;
         }
 
         // funcoes dos controles
