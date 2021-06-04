@@ -142,7 +142,7 @@
             this.Modelo_tbx.Name = "Modelo_tbx";
             this.Modelo_tbx.Size = new System.Drawing.Size(240, 20);
             this.Modelo_tbx.TabIndex = 1;
-            this.Modelo_tbx.TextChanged += new System.EventHandler(this.Modelo_tbx_TextChanged);
+            this.Modelo_tbx.TextChanged += new System.EventHandler(this.Required_TextChanged);
             // 
             // Modelo_lbl
             // 
@@ -182,7 +182,8 @@
             this.Tipo_cbb.Name = "Tipo_cbb";
             this.Tipo_cbb.Size = new System.Drawing.Size(240, 21);
             this.Tipo_cbb.TabIndex = 2;
-            this.Tipo_cbb.TextChanged += new System.EventHandler(this.Tipo_cbb_TextChanged);
+            this.Tipo_cbb.SelectedIndexChanged += new System.EventHandler(this.Tipo_cbb_TextChanged);
+            this.Tipo_cbb.TextChanged += new System.EventHandler(this.Required_TextChanged);
             // 
             // Tipo_lbl
             // 
@@ -214,7 +215,7 @@
             this.ClientSize = new System.Drawing.Size(304, 393);
             this.Controls.Add(this.Corpo_pnl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(272, 0);
+            this.MinimumSize = new System.Drawing.Size(272, 39);
             this.Name = "frmCadastroComponentesInsert";
             this.Text = "Cadastrar componente";
             this.Corpo_pnl.ResumeLayout(false);

@@ -45,11 +45,15 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
             SetEspecificacoes(objComp);
         }
 
-        private void Modelo_tbx_TextChanged(object sender, System.EventArgs e)
+        private void Required_TextChanged(object sender, System.EventArgs e)
         {
-            if (Modelo_tbx.Text != "")
+            if (Modelo_tbx.Text != "" && Tipo_cbb.Text != "")
             {
                 OK_btn.Enabled = true;
+            }
+            else
+            {
+                OK_btn.Enabled = false;
             }
         }
 
@@ -82,5 +86,6 @@ namespace MRP_SacoCarvao.Cadastro_de_Componentes
         {
             this.Close();
         }
+
     }
 }
