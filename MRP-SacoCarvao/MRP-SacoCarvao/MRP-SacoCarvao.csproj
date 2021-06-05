@@ -53,6 +53,7 @@
     <Compile Include="frmCadastroProdutoFinal.Designer.cs">
       <DependentUpon>frmCadastroProdutoFinal.cs</DependentUpon>
     </Compile>
+    <Compile Include="pnlEspecificacao.Designer.cs" />
     <Compile Include="ProdutoDAO.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Conexao.cs" />

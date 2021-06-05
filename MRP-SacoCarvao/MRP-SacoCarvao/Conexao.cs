@@ -36,12 +36,12 @@ namespace MRP_SacoCarvao
         }
 
         // Faz a Conexao com o Banco de Dados
-        private void GetConexao()
+        public void GetConexao()
         {
             try
             {
                 string connectionStrings = "";
-                connectionStrings = string.Format("server=localhost ;user id=root;pwd='Admin';database=mrp;Connect Timeout=28800;Command Timeout=2880", this.Server, this.Database, this.Usuario, this.Senha);
+                connectionStrings = string.Format("server={0} ;user id={2};pwd='{3}';database={1};Connect Timeout=28800;Command Timeout=2880", this.Server, this.Database, this.Usuario, this.Senha);
 
                 this.conn = new MySqlConnection(connectionStrings);
             }
