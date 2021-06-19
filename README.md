@@ -42,7 +42,7 @@ https://github.com/MRP-FATEC-GUARULHOS-ADS/MRP-FATEC-GUARULHOS.git
 
 ![clonando o repositório](/img/vs-git2.png)
 
-4. Depois de abrir a solução, veja se alguma referência do projeto não foi carregada corretamente (se tiver um símbolo amarelo do lado do nome a referência, ela teve algum problema).
+4. Depois de abrir a solução, veja se alguma referência do projeto não foi carregada corretamente (se tiver um símbolo amarelo do lado do nome da referência, ela teve algum problema ao ser carregada).
 
 ![erro carregando referências](/img/vs-git6.png)
 
@@ -50,15 +50,15 @@ https://github.com/MRP-FATEC-GUARULHOS-ADS/MRP-FATEC-GUARULHOS.git
 
 ![adicionando referências](/img/vs-gitrefs.png)
 
-Pronto, você já tem acesso ao projeto que a gente tá usando.
+Pronto, você já tem acesso ao projeto que a gente tá usando, tomara.
 
 ## Mantendo o projeto atualizado
-Agora toda vez que editar alguma coisa você deve se certificar que ele esteja atualizado. Pra isso cheque sempre no canto inferior direito do programa, uma setinha pra cima ↑ (Push) indica que tem mudanças que você fez e ainda não compartilhou, enquanto uma setinha pra baixo ↓ (Pull) indica que tem mudanças online que você ainda não baixou, tenha certeza de sempre estar atualizado (setinha pra cima do lado de um número 0) e na *branch* certa do projeto.
+Agora toda vez que editar alguma coisa você deve se certificar que ele esteja atualizado. Pra isso, cheque sempre no canto inferior direito do programa, uma setinha pra cima ↑ (Push) indica que tem mudanças que você fez e ainda não compartilhou, enquanto uma setinha pra baixo ↓ (Pull) indica que tem mudanças online que você ainda não baixou, tenha certeza de sempre estar atualizado (setinha pra cima do lado de um número 0) e na *branch* certa do projeto.
 
 ![Team-explorer](/img/vs-git3.jpg)
 
 ## Branch certa do projeto???
-Se tudo deu certo esse repositório tem 5 *branches*, uma principal e uma pra cada módulo. *Branchs* são versões paralelas do mesmo repositório, que a gente tá usando pra evitar conflito entre contribuições, se quiser mudar pra *branch* do seu módulo é só escolher no canto inferior direito do Visual Studio, ou só esquece o que eu disse e deixa no `main` mesmo, o importante é contribuir.
+Se tudo deu certo esse repositório tem 5 *branches*, uma principal e uma pra cada módulo. *Branchs* são versões paralelas do mesmo repositório, que a gente tá usando pra evitar conflito entre contribuições. Se quiser mudar pra *branch* do seu módulo é só escolher no canto inferior direito do Visual Studio, ou só esquece o que eu disse e deixa no `main` mesmo, o importante é contribuir.
 
 ## Contribuindo com o projeto
 1. Faça as alterações que quiser no projeto e depois abra a aba 'Team Explorer' em `Exibir > Team Explorer`, ou clique no lápis no canto inferior direito do programa, a tela de alterações será aberta, como na imagem abaixo.
