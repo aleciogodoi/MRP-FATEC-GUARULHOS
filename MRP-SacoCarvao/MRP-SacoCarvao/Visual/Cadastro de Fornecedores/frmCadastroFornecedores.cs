@@ -46,8 +46,8 @@ namespace MRP_SacoCarvao.Cadastro_de_Fornecedores
         {
             if (ListaForns_dgv.ColumnCount > 13)
             {
-                if (ListaForns_dgv.Width > 1460)
-                    ListaForns_dgv.Columns[1].Width = ListaForns_dgv.Width - 1360;
+                if (ListaForns_dgv.Width > 1560)
+                    ListaForns_dgv.Columns[1].Width = ListaForns_dgv.Width - 1460;
                 else
                     ListaForns_dgv.Columns[1].Width = 100;
             }
