@@ -28,6 +28,16 @@ namespace MRP_SacoCarvao
             objFrmCadastroComps.Show();
         }
 
+        private void ProdutosFinaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroProdutoFinal objFrmCadastroProds =
+                new frmCadastroProdutoFinal
+                {
+                    MdiParent = this
+                };
+            objFrmCadastroProds.Show();
+        }
+
         private void GruposToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCadastroGrupos frmCadastroGrupos = new frmCadastroGrupos

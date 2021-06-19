@@ -4,7 +4,7 @@ CREATE DATABASE MRP;
 USE MRP;
 
 CREATE TABLE PRODUTO (
- idProduto int primary key,
+ idProduto int primary key AUTO_INCREMENT,
  nomeProduto varchar(100) not null,
  descrProduto varchar(1000),
  qtdeMinEstoque int,
