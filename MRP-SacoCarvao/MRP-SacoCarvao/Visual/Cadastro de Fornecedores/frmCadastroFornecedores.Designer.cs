@@ -36,7 +36,7 @@
             this.EspDir_pnl = new System.Windows.Forms.Panel();
             this.Corpo_pnl = new System.Windows.Forms.Panel();
             this.BarraInf_pnl = new System.Windows.Forms.Panel();
-            this.Editar_btn = new System.Windows.Forms.Button();
+            this.Consultar_btn = new System.Windows.Forms.Button();
             this.BarraSup_pnl = new System.Windows.Forms.Panel();
             this.Pesquisar_pnl = new System.Windows.Forms.Panel();
             this.BarraPesquisa_pnl = new System.Windows.Forms.Panel();
@@ -126,7 +126,7 @@
             // 
             // BarraInf_pnl
             // 
-            this.BarraInf_pnl.Controls.Add(this.Editar_btn);
+            this.BarraInf_pnl.Controls.Add(this.Consultar_btn);
             this.BarraInf_pnl.Controls.Add(this.Excluir_btn);
             this.BarraInf_pnl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BarraInf_pnl.Location = new System.Drawing.Point(0, 358);
@@ -134,17 +134,17 @@
             this.BarraInf_pnl.Size = new System.Drawing.Size(544, 64);
             this.BarraInf_pnl.TabIndex = 3;
             // 
-            // Editar_btn
+            // Consultar_btn
             // 
-            this.Editar_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Editar_btn.Enabled = false;
-            this.Editar_btn.Location = new System.Drawing.Point(3, 10);
-            this.Editar_btn.Name = "Editar_btn";
-            this.Editar_btn.Size = new System.Drawing.Size(112, 23);
-            this.Editar_btn.TabIndex = 0;
-            this.Editar_btn.Text = "Editar Fornecedor";
-            this.Editar_btn.UseVisualStyleBackColor = true;
-            this.Editar_btn.Click += new System.EventHandler(this.BtnEditar_Click);
+            this.Consultar_btn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Consultar_btn.Enabled = false;
+            this.Consultar_btn.Location = new System.Drawing.Point(3, 10);
+            this.Consultar_btn.Name = "Consultar_btn";
+            this.Consultar_btn.Size = new System.Drawing.Size(144, 23);
+            this.Consultar_btn.TabIndex = 0;
+            this.Consultar_btn.Text = "Consultar Fornecedor";
+            this.Consultar_btn.UseVisualStyleBackColor = true;
+            this.Consultar_btn.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // BarraSup_pnl
             // 
@@ -267,7 +267,7 @@
         private System.Windows.Forms.Panel Corpo_pnl;
         private System.Windows.Forms.Label H1_lbl;
         private System.Windows.Forms.Panel BarraInf_pnl;
-        private System.Windows.Forms.Button Editar_btn;
+        private System.Windows.Forms.Button Consultar_btn;
         private System.Windows.Forms.Panel BarraSup_pnl;
         private System.Windows.Forms.Panel Pesquisar_pnl;
         private System.Windows.Forms.Panel Cadastrar_pnl;

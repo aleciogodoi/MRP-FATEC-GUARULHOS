@@ -19,6 +19,7 @@ namespace MRP_SacoCarvao
         public string celular { get; set; }
         public string email { get; set; }
         public string urlSite { get; set; }
+        public FornecedorComponente componentes { get; set; }
 
         // Construtores
         public Fornecedor() {

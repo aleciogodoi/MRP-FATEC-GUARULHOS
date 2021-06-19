@@ -58,7 +58,7 @@ namespace MRP_SacoCarvao.Cadastro_de_Fornecedores
         {
             if (e.RowIndex != -1 )
             {
-                Editar_btn.Enabled = true;
+                Consultar_btn.Enabled = true;
                 Excluir_btn.Enabled = true;
             }
         }
@@ -74,8 +74,8 @@ namespace MRP_SacoCarvao.Cadastro_de_Fornecedores
         private void ListaForns_dgv_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Fornecedor objFornSelec = ListaForns_dgv.CurrentRow.DataBoundItem as Fornecedor;
-            frmCadastroFornecedoresUpdate objFrmCadastroUpdate = new frmCadastroFornecedoresUpdate(objFornSelec);
-            objFrmCadastroUpdate.ShowDialog();
+            frmCadastroFornecedoresConsulta objFrmCadastroConsulta = new frmCadastroFornecedoresConsulta(objFornSelec);
+            objFrmCadastroConsulta.ShowDialog();
             AtualizaLista();
         }
 
@@ -100,11 +100,11 @@ namespace MRP_SacoCarvao.Cadastro_de_Fornecedores
             AtualizaLista();
         }
 
-        private void BtnEditar_Click(object sender, EventArgs e)
+        private void BtnConsultar_Click(object sender, EventArgs e)
         {
             Fornecedor objFornSelec = ListaForns_dgv.CurrentRow.DataBoundItem as Fornecedor;
-            frmCadastroFornecedoresUpdate objFrmCadastroUpdate = new frmCadastroFornecedoresUpdate( objFornSelec );
-            objFrmCadastroUpdate.ShowDialog();
+            frmCadastroFornecedoresConsulta objFrmCadastroConsulta = new frmCadastroFornecedoresConsulta( objFornSelec );
+            objFrmCadastroConsulta.ShowDialog();
             AtualizaLista();
         }
 
