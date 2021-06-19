@@ -116,31 +116,35 @@ FOREIGN KEY (idComponente) REFERENCES COMPONENTE(idComponente);
 -- DADOS
 INSERT INTO GRUPO VALUES (1,'Notebook'), (2,'Desktop'), (3,'Tablet'), (4,'Celular');
 
-INSERT INTO PRODUTO VALUES (1, 'Notebook A3', 'Notebook A3 A315-33-C58D Intel Celeron N3060 15,6" 4GB HD 500 GB Linux', 10, 200, 50, null, null, null, null, null, 1);  
-INSERT INTO PRODUTO VALUES (2, 'Notebook S145', 'Notebook S145 81WT0006BR Intel Celeron N4020 15,6" 4GB SSD 128 GB Windows', 10, 200, 50, null, null, null, null, null, 1);  
-INSERT INTO PRODUTO VALUES (3, 'Notebook P', 'Notebook P Motion Plus Q464B Intel Atom 14" 4GB eMMC', 10, 200, 50, null, null, null, null, null, 1);  
-INSERT INTO PRODUTO VALUES (4, 'Notebook S', 'Notebook S Book E20 NP550XCJ-KO2BR Intel Celeron 5205U 15,6" 4GB HD 500 GB', 10, 200, 50, null, null, null, null, null, 1);  
+INSERT INTO PRODUTO (
+  nomeProduto, descrProduto, qtdeMinEstoque, qtdeMaxEstoque, qtdeAtualEstoque,
+  altura, comprimento, largura, peso, especificacao, idGrupo
+) VALUES
+  ('Notebook A3', 'Notebook A3 A315-33-C58D Intel Celeron N3060 15,6" 4GB HD 500 GB Linux', 10, 200, 50, null, null, null, null, null, 1),
+  ('Notebook S145', 'Notebook S145 81WT0006BR Intel Celeron N4020 15,6" 4GB SSD 128 GB Windows', 10, 200, 50, null, null, null, null, null, 1),
+  ('Notebook P', 'Notebook P Motion Plus Q464B Intel Atom 14" 4GB eMMC', 10, 200, 50, null, null, null, null, null, 1),
+  ('Notebook S', 'Notebook S Book E20 NP550XCJ-KO2BR Intel Celeron 5205U 15,6" 4GB HD 500 GB', 10, 200, 50, null, null, null, null, null, 1);
 
 INSERT INTO COMPONENTE (
   tipoComponente, modeloComponente, qtdeMinEstoque,
   qtdeMaxEstoque, qtdeAtualEstoque, especificacao
 ) VALUES 
- ('Processador','Intel Celeron N3060', 100, 1000, 200, NULL)
-,('Processador','Intel Celeron N4020', 100, 1000, 200, NULL)
-,('Processador','Intel Core i5 1035G1', 100, 1000, 200, NULL)
-,('Processador','Intel Core i3 10110U', 100, 1000, 200, NULL)
-,('Processador','Intel Core i5 9300H', 100, 1000, 200, NULL)
-,('HD','HD 500 GB', 100, 1000, 200, NULL)
-,('HD','HD 1 TB', 100, 1000, 200, NULL)
-,('SSD','SSD 500 GB', 100, 1000, 200, NULL)
-,('Memória RAM','Memória RAM 4 GB', 100, 1000, 200, NULL)
-,('Memória RAM','Memória RAM 8 GB', 100, 1000, 200, NULL)
-,('Tela','Tela Notebook 15.6"', 100, 1000, 200, NULL)
-,('Tela','Tela Notebook 14"', 100, 1000, 200, NULL)
-,('Sistema','Windows 10', 100, 1000, 200, NULL)
-,('Sistema','Linux Ubuntu 20.04.2.0 LTS', 100, 1000, 200, NULL)
-,('Sistema','Linux Mint 20.1 Ulyssa', 100, 1000, 200, NULL)
-,('Memória RAM','Memória RAM 16 GB', 100, 1000, 200, NULL);
+  ('Processador','Intel Celeron N3060', 100, 1000, 200, NULL),
+  ('Processador','Intel Celeron N4020', 100, 1000, 200, NULL),
+  ('Processador','Intel Core i5 1035G1', 100, 1000, 200, NULL),
+  ('Processador','Intel Core i3 10110U', 100, 1000, 200, NULL),
+  ('Processador','Intel Core i5 9300H', 100, 1000, 200, NULL),
+  ('HD','HD 500 GB', 100, 1000, 200, NULL),
+  ('HD','HD 1 TB', 100, 1000, 200, NULL),
+  ('SSD','SSD 500 GB', 100, 1000, 200, NULL),
+  ('Memória RAM','Memória RAM 4 GB', 100, 1000, 200, NULL),
+  ('Memória RAM','Memória RAM 8 GB', 100, 1000, 200, NULL),
+  ('Tela','Tela Notebook 15.6"', 100, 1000, 200, NULL),
+  ('Tela','Tela Notebook 14"', 100, 1000, 200, NULL),
+  ('Sistema','Windows 10', 100, 1000, 200, NULL),
+  ('Sistema','Linux Ubuntu 20.04.2.0 LTS', 100, 1000, 200, NULL),
+  ('Sistema','Linux Mint 20.1 Ulyssa', 100, 1000, 200, NULL),
+  ('Memória RAM','Memória RAM 16 GB', 100, 1000, 200, NULL);
 
 INSERT INTO ESTRUTURAPRODUTO VALUES 
    (1,  1, 1) ,(1,  6, 1) ,(1,  9, 1) ,(1, 11, 1) ,(1, 14, 1)
