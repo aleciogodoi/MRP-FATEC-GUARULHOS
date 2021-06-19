@@ -15,25 +15,23 @@ namespace MRP_SacoCarvao
         public int qtdeMinEstoque { get; set; }
         public int qtdeMaxEstoque { get; set; }
         public int qtdeAtualEstoque { get; set; }
-        public float altura { get; set; }
-        public float comprimento { get; set; }
-        public float largura { get; set; }
-        public float peso { get; set; }
+        public double altura { get; set; }
+        public double comprimento { get; set; }
+        public double largura { get; set; }
+        public double peso { get; set; }
         public string especificacao { get; set; }
         public Grupo grupo;
 
         // Construtores
-        public Produto(){  }
+        public Produto(){}
 
-        public Produto(
-            int idProduto, string nomeProduto, 
+        public Produto(int idProduto, string nomeProduto, 
             string descrProduto, 
-            int qtdeMinEstoque, int qtdeMaxEstoque, int qtdeAtualEstoque,
-            float altura, float comprimento, float largura,
-            float peso,
-            string especificacao,
-            Grupo grupo
-        ) {
+            int qtdeMinEstoque, int qtdeMaxEstoque, 
+            int qtdeAtualEstoque, double altura, 
+            double comprimento,double largura, double peso, string 
+            especificacao, Grupo grupo)
+        {
             this.idProduto = idProduto;
             this.nomeProduto = nomeProduto;
             this.descrProduto = descrProduto;

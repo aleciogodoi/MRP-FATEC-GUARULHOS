@@ -140,6 +140,13 @@
       <DependentUpon>frmCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="Visual\frmMenu.cs">
+    <Compile Include="frmCadastroProdutoFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroProdutoFinal.Designer.cs">
+      <DependentUpon>frmCadastroProdutoFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlEspecificacao.Designer.cs" />
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Visual\frmMenu.Designer.cs">
@@ -155,6 +162,7 @@
     <Compile Include="Conexao\GrupoDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="Visual\Cadastro de Componentes\frmCadastroComponentes.resx">
       <DependentUpon>frmCadastroComponentes.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,8 +200,11 @@
       <DependentUpon>frmCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual\frmMenu.resx">
-      <DependentUpon>frmMenu.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmCadastroProdutoFinal.resx">
+      <DependentUpon>frmCadastroProdutoFinal.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Visual\frmCadastroGrupos.resx">
       <DependentUpon>frmCadastroGrupos.cs</DependentUpon>
     </EmbeddedResource>
