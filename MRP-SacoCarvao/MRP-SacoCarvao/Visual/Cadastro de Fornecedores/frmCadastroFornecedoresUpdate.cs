@@ -7,7 +7,7 @@ namespace MRP_SacoCarvao.Cadastro_de_Fornecedores
         //funcoes
         private void SetCampos(Fornecedor paramForn)
         {
-            H1_lbl.Text = paramForn.idFornecedor.ToString();
+            H1_lbl.Text = paramForn.nomeFornecedor;
             Nome_tbx.Text = paramForn.nomeFornecedor;
             CEP_tbx.Text = paramForn.cep;
             Tipo_cbb.Text = paramForn.tipoLogradouro;

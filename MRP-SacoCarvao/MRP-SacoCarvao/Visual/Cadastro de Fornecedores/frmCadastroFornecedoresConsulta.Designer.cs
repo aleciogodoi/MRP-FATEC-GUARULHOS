@@ -112,6 +112,7 @@
             this.Editar_btn.TabIndex = 0;
             this.Editar_btn.Text = "Editar Informações do Fornecedor";
             this.Editar_btn.UseVisualStyleBackColor = true;
+            this.Editar_btn.Click += new System.EventHandler(this.Editar_btn_Click);
             // 
             // OK_btn
             // 
@@ -122,6 +123,7 @@
             this.OK_btn.TabIndex = 1;
             this.OK_btn.Text = "OK";
             this.OK_btn.UseVisualStyleBackColor = true;
+            this.OK_btn.Click += new System.EventHandler(this.OK_btn_Click);
             // 
             // BarraSup_pnl
             // 
