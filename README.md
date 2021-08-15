@@ -11,5 +11,6 @@ O programa criado no windows forms, em C#, é responsável por cadastrar e contr
 - Julia
 - Marcos
 - Rafael
+- Luciano
 
 ![Saco de carvão](/img/logo.png)
